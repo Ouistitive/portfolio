@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { MdOutlineLightMode } from "react-icons/md";
-import type { NavbarSection } from "../types/NavbarSection";
+import type { NavbarSection } from "../../types/NavbarSection";
+import { ThemeToggle } from "./ThemeToggle";
 
 export interface NavbarProps {
 	navbarSections: NavbarSection[];
@@ -25,7 +25,7 @@ export function Navbar({ navbarSections }: NavbarProps) {
 
 	return (
 		<header
-			className={`fixed top-0 left-0 z-50 flex w-full items-center justify-around gap-4 p-5 transition-all duration-300 ${isScrolled ? "bg-black/40 backdrop-blur-md" : "bg-transparent"}`}
+			className={`fixed top-0 left-0 z-50 flex w-full items-center justify-around gap-4 p-5 transition-all duration-300 ${isScrolled ? "bg-bg/40 backdrop-blur-md" : "bg-transparent"}`}
 		>
 			<div>ST</div>
 			<div className="flex gap-8">
@@ -42,9 +42,7 @@ export function Navbar({ navbarSections }: NavbarProps) {
 				))}
 			</div>
 
-			<div className="cursor-pointer">
-				<MdOutlineLightMode size={20} />
-			</div>
+			<ThemeToggle />
 		</header>
 	);
 }
