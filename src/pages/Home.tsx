@@ -25,6 +25,7 @@ export function HomePage() {
 			{navbarSections.map((section, idx) => (
 				<div
 					key={section.link}
+					id={section.link}
 					className={`py-10 ${idx % 2 === 0 ? "bg-bg" : "bg-bg-surface"}`}
 				>
 					<Title key={section.link} title={section.title} />

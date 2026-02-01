@@ -24,7 +24,7 @@ export function Navbar({ navbarSections }: NavbarProps) {
 	}, []);
 
 	return (
-		<header
+		<nav
 			className={`fixed top-0 left-0 z-50 flex w-full items-center justify-around gap-4 p-5 transition-all duration-300 ${isScrolled ? "bg-bg/40 backdrop-blur-md" : "bg-transparent"}`}
 		>
 			<div>ST</div>
@@ -43,6 +43,6 @@ export function Navbar({ navbarSections }: NavbarProps) {
 			</div>
 
 			<ThemeToggle />
-		</header>
+		</nav>
 	);
 }
