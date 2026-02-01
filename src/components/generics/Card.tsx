@@ -1,15 +1,14 @@
+import type { ReactNode } from "react";
 
 interface CardProps {
-    title: string
-    description: string;
+    className?: string;
+    children: ReactNode;
 }
 
-export function Card({ title, description }: CardProps) {
+export function Card({ className, children }: CardProps) {
     return (
-        <article className="bg-bg-highlight p-5 rounded-2xl w-[100%]">
-            <p className="text-2xl font-bold">{title}</p>
-            <hr />
-            <p>{description}</p>
+        <article className={`bg-bg-highlight p-5 rounded-2xl w-full border transition duration-400 ease-in-out hover:-translate-y-2 ${className || ""}`}>
+            {children}
         </article>
     );
 }
