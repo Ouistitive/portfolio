@@ -19,7 +19,7 @@ export function Navbar({ navbarSections }: NavbarProps) {
 
             <div className="flex gap-8">
                 {navbarSections.map(section => (
-                    <div className="cursor-pointer group transition duration-300" onClick={() => handleClick(section.link)}>
+                    <div key={section.link} className="cursor-pointer group transition duration-300" onClick={() => handleClick(section.link)}>
                         {section.title}
                         <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-400"></span>
                     </div>

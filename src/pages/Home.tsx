@@ -18,7 +18,7 @@ export function HomePage() {
             Hi, I'm Steven Tea!
 
             {navbarSections.map(section => (
-                <Title title={section.title} />
+                <Title key={section.link} title={section.title} />
             ))}
         </div>
     )
