@@ -19,7 +19,9 @@ export function HomePage() {
 	return (
 		<div className="bg-bg text-text">
 			<Navbar navbarSections={navbarSections} />
-			Hi, I'm Steven Tea!
+			<section className="h-screen">
+				<p>Hi, I'm Steven Tea!</p>
+			</section>
 			{navbarSections.map((section, idx) => (
 				<div
 					key={section.link}
