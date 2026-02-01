@@ -3,7 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-	--color-bg: #17191d;
+	--color-bg: #131316;
+	--color-bg-surface: #0a0a0a;
 	--color-bg-highlight: #151515;
 
 	--color-text: #ddd;
@@ -16,7 +17,7 @@
 
 	color-scheme: light dark;
 	color: rgba(255, 255, 255, 0.87);
-	background-color: #17191d;
+	background-color: #131316;
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;

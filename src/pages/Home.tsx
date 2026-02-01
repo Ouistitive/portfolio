@@ -1,5 +1,6 @@
 import { Navbar } from "../components/Navbar";
 import { ProjectsSection } from "../components/sections/ProjectsSection";
+import { SchoolSection } from "../components/sections/SchoolSection";
 import { SkillsSection } from "../components/sections/SkillsSection";
 import { Title } from "../components/Title";
 import type { NavbarSection } from "../types/NavbarSection";
@@ -8,7 +9,7 @@ export function HomePage() {
 	const navbarSections: NavbarSection[] = [
 		{ title: "Compétences", link: "/skills", Section: SkillsSection },
 		{ title: "Projets", link: "/projects", Section: ProjectsSection },
-		{ title: "Formations", link: "/school" },
+		{ title: "Formations", link: "/school", Section: SchoolSection },
 		{ title: "Expérience", link: "/experience" },
 		{ title: "À propos", link: "/about" },
 		{ title: "Contact", link: "/contact" },
@@ -18,8 +19,11 @@ export function HomePage() {
 		<div className="bg-bg text-text">
 			<Navbar navbarSections={navbarSections} />
 			Hi, I'm Steven Tea!
-			{navbarSections.map((section) => (
-				<div key={section.link}>
+			{navbarSections.map((section, idx) => (
+				<div
+					key={section.link}
+					className={`py-10 ${idx % 2 === 0 ? "bg-bg" : "bg-bg-surface"}`}
+				>
 					<Title key={section.link} title={section.title} />
 					{section.Section ? <section.Section /> : null}
 				</div>
