@@ -1,5 +1,6 @@
 import { Navbar } from "../components/Navbar";
 import { ExperienceSection } from "../components/sections/ExperienceSection";
+import { IntroductionSection } from "../components/sections/IntroductionSection";
 import { ProjectsSection } from "../components/sections/ProjectsSection";
 import { SchoolSection } from "../components/sections/SchoolSection";
 import { SkillsSection } from "../components/sections/SkillsSection";
@@ -19,11 +20,12 @@ export function HomePage() {
 	return (
 		<div className="bg-bg text-text">
 			<Navbar navbarSections={navbarSections} />
-			Hi, I'm Steven Tea!
+			<IntroductionSection />
+
 			{navbarSections.map((section, idx) => (
 				<div
 					key={section.link}
-					className={`py-10 ${idx % 2 === 0 ? "bg-bg" : "bg-bg-surface"}`}
+					className={`py-10 ${idx % 2 === 0 ? "bg-bg-surface" : "bg-bg"}`}
 				>
 					<Title key={section.link} title={section.title} />
 					{section.Section ? <section.Section /> : null}

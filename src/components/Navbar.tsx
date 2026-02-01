@@ -42,8 +42,8 @@ export function Navbar({ navbarSections }: NavbarProps) {
 				))}
 			</div>
 
-			<div>
-				<MdOutlineLightMode />
+			<div className="cursor-pointer">
+				<MdOutlineLightMode size={20} />
 			</div>
 		</header>
 	);
