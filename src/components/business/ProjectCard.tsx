@@ -17,7 +17,7 @@ export function ProjectCard({
 		<Card className="flex h-full flex-col gap-10">
 			<div>
 				<p className="font-bold text-2xl">{title}</p>
-				<hr className="my-2" />
+				<hr className="my-2 text-border" />
 				<p>{description}</p>
 			</div>
 
