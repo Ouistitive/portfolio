@@ -1,4 +1,4 @@
-import { Navbar } from "../components/Navbar";
+import { Navbar } from "../components/business/Navbar";
 import type { NavbarSection } from "../types/NavbarSection";
 
 export function ProjectsPage() {

@@ -1,10 +1,10 @@
-import { Navbar } from "../components/Navbar";
+import { Navbar } from "../components/business/Navbar";
+import { Title } from "../components/generics/Title";
 import { ExperienceSection } from "../components/sections/ExperienceSection";
 import { IntroductionSection } from "../components/sections/IntroductionSection";
 import { ProjectsSection } from "../components/sections/ProjectsSection";
 import { SchoolSection } from "../components/sections/SchoolSection";
 import { SkillsSection } from "../components/sections/SkillsSection";
-import { Title } from "../components/Title";
 import type { NavbarSection } from "../types/NavbarSection";
 
 export function HomePage() {
