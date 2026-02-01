@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { MdOutlineLightMode } from "react-icons/md";
 import type { NavbarSection } from "../types/NavbarSection";
 
@@ -6,15 +7,27 @@ export interface NavbarProps {
 }
 
 export function Navbar({ navbarSections }: NavbarProps) {
+	const [isScrolled, setIsScrolled] = useState(false);
+
 	const handleClick = (id: string) => {
 		const element = document.getElementById(id);
 		element?.scrollIntoView({ behavior: "smooth" });
 	};
 
-	return (
-		<section className="flex items-center justify-around gap-4 bg-black p-5">
-			<div>ST</div>
+	useEffect(() => {
+		const onScroll = () => {
+			setIsScrolled(window.scrollY > 10);
+		};
 
+		window.addEventListener("scroll", onScroll);
+		return () => window.removeEventListener("scroll", onScroll);
+	}, []);
+
+	return (
+		<header
+			className={`fixed top-0 left-0 z-50 flex w-full items-center justify-around gap-4 p-5 transition-all duration-300 ${isScrolled ? "bg-black/40 backdrop-blur-md" : "bg-transparent"}`}
+		>
+			<div>ST</div>
 			<div className="flex gap-8">
 				{navbarSections.map((section) => (
 					<button
@@ -32,6 +45,6 @@ export function Navbar({ navbarSections }: NavbarProps) {
 			<div>
 				<MdOutlineLightMode />
 			</div>
-		</section>
+		</header>
 	);
 }

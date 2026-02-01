@@ -1,4 +1,5 @@
 import { Navbar } from "../components/Navbar";
+import { ExperienceSection } from "../components/sections/ExperienceSection";
 import { ProjectsSection } from "../components/sections/ProjectsSection";
 import { SchoolSection } from "../components/sections/SchoolSection";
 import { SkillsSection } from "../components/sections/SkillsSection";
@@ -10,7 +11,7 @@ export function HomePage() {
 		{ title: "Compétences", link: "/skills", Section: SkillsSection },
 		{ title: "Projets", link: "/projects", Section: ProjectsSection },
 		{ title: "Formations", link: "/school", Section: SchoolSection },
-		{ title: "Expérience", link: "/experience" },
+		{ title: "Expérience", link: "/experience", Section: ExperienceSection },
 		{ title: "À propos", link: "/about" },
 		{ title: "Contact", link: "/contact" },
 	];

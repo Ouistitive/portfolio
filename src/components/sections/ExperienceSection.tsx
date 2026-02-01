@@ -1,29 +1,27 @@
 import type { TimelineItemProps } from "../../types/TimelineItem";
 import { Timeline } from "../generics/Timeline";
 
-export function SchoolSection() {
+export function ExperienceSection() {
 	const schoolHistory: TimelineItemProps[] = [
 		{
 			from: new Date(),
 			to: new Date(),
-			title:
-				"Diplôme d'ingénieur - Génie informatique filière Infrastructure et Système d'information",
-			subtitle: "Université de Technologie de Compiègne",
+			title: "Alternant ingénieur Cloud & Software",
+			subtitle: "SAP France",
 			description: "Université de technologie de Compiègne",
 		},
 		{
 			from: new Date(),
 			to: new Date(),
-			title:
-				"BUT Informatique - Réalisation d'applications : conception, développement, validation",
-			subtitle: "IUT de Paris Cité",
+			title: "Stagiaire développeur Cloud Full-Stack",
+			subtitle: "IZHO",
 			description: "IUT de Paris Cité",
 		},
 		{
 			from: new Date(),
 			to: new Date(),
-			title: "Baccalauréat générale - Spécialités Informatique et Mathématique",
-			subtitle: "Lycée Rosa Parks",
+			title: "Stagiaire développeur web et mobile",
+			subtitle: "SIMPLOS",
 			description: "IUT de Paris Cité",
 		},
 	];

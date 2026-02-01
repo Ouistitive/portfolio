@@ -1,4 +1,4 @@
-import type { TimelineItemProps } from "../../types/Timeline";
+import type { TimelineItemProps } from "../../types/TimelineItem";
 import { Card } from "./Card";
 
 interface TimelineProps {
@@ -16,7 +16,7 @@ function TimelineItem({
 		<Card>
 			<div className="flex items-start justify-between">
 				<p className="font-bold">{title}</p>
-				<div className="rounded border px-2 py-1 text-xs">
+				<div className="rounded border border-border px-2 py-1 text-xs">
 					<p>
 						{from.getFullYear()} - {to.getFullYear()}
 					</p>
@@ -38,12 +38,12 @@ export function Timeline({ timelineItems }: TimelineProps) {
 							key={item.title}
 							className="relative flex items-baseline gap-6 py-5 pb-5"
 						>
-							<div className="before:absolute before:top-0 before:left-[5.5px] before:h-full before:w-px before:bg-gray-400">
+							<div className="before:absolute before:top-0 before:left-[5.5px] before:h-full before:w-px before:bg-border">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="12"
 									height="12"
-									className="bi bi-circle-fill fill-gray-400"
+									className="bi bi-circle-fill fill-border"
 									viewBox="0 0 16 16"
 								>
 									<title>circle</title>
