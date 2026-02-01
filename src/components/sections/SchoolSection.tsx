@@ -7,7 +7,7 @@ export function SchoolSection() {
 			from: new Date(),
 			to: new Date(),
 			title:
-				"Diplôme d'ingénieur - Génie informatique filière Infrastructure et Système d'information",
+				"Diplôme d'ingénieur — Génie informatique filière Infrastructure et Système d'information",
 			subtitle: "Université de Technologie de Compiègne",
 			description: "Université de technologie de Compiègne",
 		},
@@ -15,14 +15,14 @@ export function SchoolSection() {
 			from: new Date(),
 			to: new Date(),
 			title:
-				"BUT Informatique - Réalisation d'applications : conception, développement, validation",
+				"BUT Informatique — Réalisation d'applications : conception, développement, validation",
 			subtitle: "IUT de Paris Cité",
 			description: "IUT de Paris Cité",
 		},
 		{
 			from: new Date(),
 			to: new Date(),
-			title: "Baccalauréat générale - Spécialités Informatique et Mathématique",
+			title: "Baccalauréat générale — Spécialités Informatique et Mathématique",
 			subtitle: "Lycée Rosa Parks",
 			description: "IUT de Paris Cité",
 		},

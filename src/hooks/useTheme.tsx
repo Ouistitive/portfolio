@@ -5,7 +5,7 @@ export function useTheme() {
 		if (localStorage.theme) return localStorage.theme;
 		return window.matchMedia("(prefers-color-scheme: dark)").matches
 			? "dark"
-			: "light";
+			: "dark";
 	});
 
 	useEffect(() => {
