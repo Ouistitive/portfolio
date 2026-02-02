@@ -1,32 +1,47 @@
-import { FaCode } from "react-icons/fa";
+import { FaCloud, FaCode, FaServer } from "react-icons/fa";
+import { MdSchema } from "react-icons/md";
 import { SkillCard, type SkillCardProps } from "../business/SkillCard";
 
 export function SkillsSection() {
 	const skills: SkillCardProps[] = [
 		{
-			Icon: FaCode,
-			title: "Développement backend",
-			description: "Dev",
-			tags: ["Node.JS", "Java SpringBoot", "Go", "SAP CAP CDS", "Python"],
+			Icon: FaServer,
+			title: "Backend",
+			description: "Conception d'API et logique métier",
+			tags: [
+				"Node.JS",
+				"Java",
+				"Go",
+				"Python",
+				"Express",
+				"SpringBoot",
+				"SAP CAP (CDS)",
+			],
 		},
 		{
 			Icon: FaCode,
-			title: "Développement frontend",
-			description: "Dev",
-			tags: ["React", "Typescript", "Tailwind", "SAPUI5"],
+			title: "Frontend",
+			description: "Interfaces web modernes et performantes",
+			tags: ["React", "TypeScript", "Tailwind CSS", "SAPUI5", "HTML", "CSS"],
+		},
+		{
+			Icon: MdSchema,
+			title: "Architecture applicative",
+			description: "Conception et structuration d'applications",
+			tags: ["Diagrammes UML", "Microservices", "Programmation orientée objet"],
+		},
+		{
+			Icon: FaCloud,
+			title: "Cloud",
+			description: "",
+			tags: ["SAP BTP", "SAP S4/HANA", "Azure Databricks", "AWS"],
 		},
 	];
 
 	return (
 		<section className="mx-60 grid grid-cols-3 gap-8">
-			{skills.map(({ title, description, tags }: SkillCardProps) => (
-				<SkillCard
-					key={title}
-					Icon={FaCode}
-					title={title}
-					description={description}
-					tags={tags}
-				/>
+			{skills.map((skill) => (
+				<SkillCard key={skill.title} {...skill} />
 			))}
 		</section>
 	);
