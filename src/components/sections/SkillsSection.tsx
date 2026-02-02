@@ -12,10 +12,10 @@ export function SkillsSection() {
 				"Node.JS",
 				"Java",
 				"Go",
-				"Python",
 				"Express",
-				"SpringBoot",
 				"SAP CAP (CDS)",
+				"SpringBoot",
+				"Python",
 			],
 		},
 		{
@@ -28,13 +28,13 @@ export function SkillsSection() {
 			Icon: MdSchema,
 			title: "Architecture applicative",
 			description: "Conception et structuration d'applications",
-			tags: ["Diagrammes UML", "Microservices", "Programmation orientée objet"],
+			tags: ["Diagrammes UML", "Programmation orientée objet"],
 		},
 		{
 			Icon: FaCloud,
 			title: "Cloud",
 			description: "",
-			tags: ["SAP BTP", "SAP S4/HANA", "Azure Databricks", "AWS"],
+			tags: ["SAP BTP"],
 		},
 	];
 

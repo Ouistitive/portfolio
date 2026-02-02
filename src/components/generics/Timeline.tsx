@@ -1,21 +1,36 @@
+import type { IconType } from "react-icons";
 import type { TimelineItemProps } from "../../types/TimelineItem";
 import { Card } from "./Card";
 
 interface TimelineProps {
+	Icon: IconType;
 	timelineItems: TimelineItemProps[];
 }
 
+interface TimelineItemExtraProps {
+	Icon?: IconType;
+	from: Date;
+	to: Date;
+	title: string;
+	subtitle: string;
+	description: string;
+}
+
 function TimelineItem({
+	Icon,
 	from,
 	to,
 	title,
 	subtitle,
 	description,
-}: TimelineItemProps) {
+}: TimelineItemExtraProps) {
 	return (
 		<Card>
 			<div className="flex items-start justify-between">
-				<p className="font-bold">{title}</p>
+				<div className="flex items-center gap-2">
+					{Icon ? <Icon /> : null}
+					<p className="font-bold">{title}</p>
+				</div>
 				<div className="rounded border border-border px-2 py-1 text-xs">
 					<p>
 						{from.getFullYear()} - {to.getFullYear()}
@@ -28,7 +43,7 @@ function TimelineItem({
 	);
 }
 
-export function Timeline({ timelineItems }: TimelineProps) {
+export function Timeline({ Icon, timelineItems }: TimelineProps) {
 	return (
 		<section className="flex justify-center pt-20">
 			<div className="w-230">
@@ -52,6 +67,7 @@ export function Timeline({ timelineItems }: TimelineProps) {
 							</div>
 
 							<TimelineItem
+								Icon={Icon}
 								from={item.from}
 								to={item.to}
 								title={item.title}

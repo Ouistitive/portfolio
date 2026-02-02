@@ -3,13 +3,13 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-	--color-bg: #131316;
-	--color-bg-surface: #0a0a0a;
-	--color-bg-highlight: #151515;
-	--color-bg-tags: #303030;
+	--color-bg: #ededed;
+	--color-bg-surface: #dcdcdc;
+	--color-bg-highlight: #e3e3e3;
+	--color-bg-tags: #e0e0e0;
 
 	--color-border: #666;
-	--color-text: #ddd;
+	--color-text: #1f1f1f;
 	--color-text-subtitle: #777;
 }
 
@@ -29,13 +29,13 @@
 }
 
 .dark {
-	--color-bg: #ededed;
-	--color-bg-surface: #dcdcdc;
-	--color-bg-highlight: #e3e3e3;
-	--color-bg-tags: #303030;
+	--color-bg: #131316;
+	--color-bg-surface: #0a0a0a;
+	--color-bg-highlight: #151515;
+	--color-bg-tags: #0a0a0a;
 
 	--color-border: #666;
-	--color-text: #1f1f1f;
+	--color-text: #ddd;
 	--color-text-subtitle: #777;
 }
 

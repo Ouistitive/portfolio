@@ -1,3 +1,4 @@
+import { IoSchool } from "react-icons/io5";
 import type { TimelineItemProps } from "../../types/TimelineItem";
 import { Timeline } from "../generics/Timeline";
 
@@ -22,11 +23,11 @@ export function SchoolSection() {
 		{
 			from: new Date(),
 			to: new Date(),
-			title: "Baccalauréat générale — Spécialités Informatique et Mathématique",
+			title: "Baccalauréat général — Spécialités Informatique et Mathématique",
 			subtitle: "Lycée Rosa Parks",
 			description: "IUT de Paris Cité",
 		},
 	];
 
-	return <Timeline timelineItems={schoolHistory} />;
+	return <Timeline Icon={IoSchool} timelineItems={schoolHistory} />;
 }
