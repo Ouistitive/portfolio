@@ -13,7 +13,7 @@ export function ThemeToggle() {
 			<button
 				type="button"
 				onClick={handleClick}
-				className="z-10 cursor-pointer rounded bg-bg-surface px-4 py-2"
+				className="z-10 cursor-pointer rounded px-4 py-2"
 			>
 				{theme === "dark" ? (
 					<MdOutlineLightMode size={20} />

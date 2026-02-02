@@ -11,8 +11,8 @@ export function HomePage() {
 	const navbarSections: NavbarSection[] = [
 		{ title: "Compétences", link: "#skills", Section: SkillsSection },
 		{ title: "Projets", link: "#projects", Section: ProjectsSection },
-		{ title: "Formations", link: "#school", Section: SchoolSection },
 		{ title: "Expérience", link: "#experience", Section: ExperienceSection },
+		{ title: "Formations", link: "#school", Section: SchoolSection },
 		{ title: "À propos", link: "#about" },
 		{ title: "Contact", link: "#contact" },
 	];
