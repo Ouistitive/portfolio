@@ -7,7 +7,11 @@ export function ProjectsSection() {
 			title: "Simulation de Black Friday",
 			description:
 				"Simulation en Go visant à modéliser les mouvements de foule lors du Black Friday afin d'identifier l'agencement de magasin optimal permettant aux agents de parcourir l'ensemble de l'espace.\n\nLe système repose sur plusieurs types d’agents : des clients classiques, des clients égoïstes pouvant voler d’autres agents, et des agents de sécurité chargés de réduire le taux de vol dans leur champ de vision",
-			tags: ["Système multi-agents", "Go", "Gestion de la concurrence"],
+			tags: [
+				"Système multi-agents",
+				"Go / Ebiten",
+				"Gestion de la concurrence",
+			],
 			preview: BlackFridayPreview,
 			viewGithub: true,
 		},
