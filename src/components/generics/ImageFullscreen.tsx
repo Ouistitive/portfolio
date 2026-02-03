@@ -81,7 +81,7 @@ export default function ImageFullscreen({
 					<img
 						src={src}
 						alt={alt}
-						className={`block object-cover ${className}`}
+						className={`block max-h-fit max-w-fit object-contain ${className}`}
 					/>
 				</button>
 			</Dialog.Trigger>

@@ -24,14 +24,16 @@ export function ProjectCard({
 			<div>
 				<p className="font-bold text-2xl">{title}</p>
 				<hr className="my-2 text-border" />
-				<p className="whitespace-pre-line text-sm">{description}</p>
 				{preview ? (
-					<ImageFullscreen
-						src={preview}
-						alt={"Image"}
-						className="mx-auto mt-5 w-[85%] rounded-lg"
-					/>
+					<div className="md-5 flex h-70 justify-center rounded-bg bg-bg-surface">
+						<ImageFullscreen
+							src={preview}
+							alt={"Image"}
+							className="flex h-60 items-center justify-center overflow-hidden rounded bg-bg-surface"
+						/>
+					</div>
 				) : null}
+				<p className="whitespace-pre-line text-sm">{description}</p>
 			</div>
 
 			<footer className="mt-auto flex flex-col flex-wrap gap-3">
