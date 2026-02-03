@@ -1,5 +1,8 @@
+import i18next from "i18next";
 import { useEffect, useRef, useState } from "react";
 import { GrLanguage } from "react-icons/gr";
+
+type LanguageAvailable = "fr" | "en";
 
 export function LanguageOptions() {
 	const [open, setOpen] = useState(false);
@@ -18,6 +21,10 @@ export function LanguageOptions() {
 		};
 	}, []);
 
+	const changeLanguage = (languageCode: LanguageAvailable) => {
+		i18next.changeLanguage(languageCode as string);
+	};
+
 	return (
 		<div ref={ref} className="relative">
 			<button
@@ -33,12 +40,18 @@ export function LanguageOptions() {
 				<div className="absolute right-0 mt-2 rounded border border-border bg-bg-surface shadow-lg">
 					<button
 						type="button"
+						onClick={() => {
+							changeLanguage("fr");
+						}}
 						className="w-full cursor-pointer px-3 py-2 text-left hover:bg-bg"
 					>
 						FR
 					</button>
 					<button
 						type="button"
+						onClick={() => {
+							changeLanguage("en");
+						}}
 						className="w-full cursor-pointer px-3 py-2 text-left hover:bg-bg"
 					>
 						EN

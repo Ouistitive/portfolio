@@ -4,6 +4,7 @@ import { Card } from "../generics/Card";
 
 export interface SkillCardProps {
 	Icon: IconType;
+	key: string;
 	title: string;
 	description: string;
 	tags: string[];
