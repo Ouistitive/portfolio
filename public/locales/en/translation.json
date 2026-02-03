@@ -46,11 +46,7 @@
 		"blackfridaySimulator": {
 			"title": "Black Friday simulation",
 			"description": "A Go-based simulation designed to model crowd dynamics during Black Friday, with the goal of identifying an optimal store layout that allows agents to navigate the entire store efficiently.\n\nThe system includes several types of agents: standard customers, selfish customers capable of stealing from other agents, and security guards responsible for reducing theft within their field of view.",
-			"tags": [
-				"Multi-agents System",
-				"Go / Ebiten",
-				"Concurrency management"
-			]
+			"tags": ["Multi-agents System", "Go / Ebiten", "Concurrency management"]
 		},
 		"bobby": {
 			"title": "Bobby: Inventory management for UTC Student Organizations",
@@ -59,7 +55,7 @@
 		},
 		"kanamaster": {
 			"title": "KanaMaster: Mobile application quiz",
-			"description": "KanaMaster is a Java-based mobile quiz application designed to help users learn the main Japanese characters known as kana.",			
+			"description": "KanaMaster is a Java-based mobile quiz application designed to help users learn the main Japanese characters known as kana.",
 			"tags": ["Java", "Android Studio"]
 		}
 	},
