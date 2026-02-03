@@ -9,11 +9,11 @@ export function ThemeToggle() {
 	};
 
 	return (
-		<div className="relative flex items-center justify-center">
+		<div className="relative flex items-center justify-center rounded border border-border">
 			<button
 				type="button"
 				onClick={handleClick}
-				className="z-10 cursor-pointer rounded px-4 py-2"
+				className="z-10 cursor-pointer rounded px-3 py-2"
 			>
 				{theme === "dark" ? (
 					<MdOutlineLightMode size={20} />

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { NavbarSection } from "../../types/NavbarSection";
+import { LanguageOptions } from "./LanguageOptions";
 import { ThemeToggle } from "./ThemeToggle";
 
 export interface NavbarProps {
@@ -41,8 +42,10 @@ export function Navbar({ navbarSections }: NavbarProps) {
 					</button>
 				))}
 			</div>
-
-			<ThemeToggle />
+			<div className="flex items-center gap-5">
+				<LanguageOptions />
+				<ThemeToggle />
+			</div>
 		</nav>
 	);
 }

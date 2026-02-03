@@ -1,13 +1,15 @@
+import { useTranslation } from "react-i18next";
 import { FaCloud, FaCode, FaServer } from "react-icons/fa";
 import { MdSchema } from "react-icons/md";
 import { SkillCard, type SkillCardProps } from "../business/SkillCard";
 
 export function SkillsSection() {
+	const { t } = useTranslation();
 	const skills: SkillCardProps[] = [
 		{
 			Icon: FaServer,
-			title: "Backend",
-			description: "Conception d'API et logique métier",
+			title: t("skillsSection.backend.title"),
+			description: t("skillsSection.backend.description"),
 			tags: [
 				"Node.JS",
 				"Java",
@@ -20,20 +22,20 @@ export function SkillsSection() {
 		},
 		{
 			Icon: FaCode,
-			title: "Frontend",
-			description: "Interfaces web modernes et performantes",
+			title: t("skillsSection.frontend.title"),
+			description: t("skillsSection.frontend.description"),
 			tags: ["React", "TypeScript", "Tailwind CSS", "SAPUI5", "HTML", "CSS"],
 		},
 		{
 			Icon: MdSchema,
-			title: "Architecture applicative",
-			description: "Conception et structuration d'applications",
+			title: t("skillsSection.architecture.title"),
+			description: t("skillsSection.architecture.description"),
 			tags: ["Diagrammes UML", "Programmation orientée objet"],
 		},
 		{
 			Icon: FaCloud,
-			title: "Cloud",
-			description: "",
+			title: t("skillsSection.architecture.title"),
+			description: t("skillsSection.cloud.description"),
 			tags: ["SAP BTP"],
 		},
 	];
