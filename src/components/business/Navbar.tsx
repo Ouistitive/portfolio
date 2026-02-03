@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { NavbarSection } from "../../types/NavbarSection";
+import { LanguageOptions } from "./LanguageOptions";
 import { ThemeToggle } from "./ThemeToggle";
 
 export interface NavbarProps {
@@ -25,10 +26,15 @@ export function Navbar({ navbarSections }: NavbarProps) {
 
 	return (
 		<nav
-			className={`fixed top-0 left-0 z-50 flex w-full items-center justify-around gap-4 p-5 transition-all duration-300 ${isScrolled ? "bg-bg/40 backdrop-blur-md" : "bg-transparent"}`}
+			className={`fixed top-0 left-0 z-50 flex w-full items-center gap-4 p-5 transition-all duration-300 ${isScrolled ? "bg-bg/40 backdrop-blur-md" : "bg-transparent"}`}
 		>
-			<div>ST</div>
-			<div className="flex gap-8">
+			{/* Left side */}
+			<div className="flex items-center gap-4">
+				<div>ST</div>
+			</div>
+
+			{/* Center sections */}
+			<div className="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 gap-8">
 				{navbarSections.map((section) => (
 					<button
 						key={section.link}
@@ -42,7 +48,11 @@ export function Navbar({ navbarSections }: NavbarProps) {
 				))}
 			</div>
 
-			<ThemeToggle />
+			{/* Right side */}
+			<div className="ml-auto flex items-center gap-5">
+				<LanguageOptions />
+				<ThemeToggle />
+			</div>
 		</nav>
 	);
 }

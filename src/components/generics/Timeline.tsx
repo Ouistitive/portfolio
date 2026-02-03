@@ -3,7 +3,7 @@ import type { TimelineItemProps } from "../../types/TimelineItem";
 import { Card } from "./Card";
 
 interface TimelineProps {
-	Icon: IconType;
+	Icon?: IconType;
 	timelineItems: TimelineItemProps[];
 }
 

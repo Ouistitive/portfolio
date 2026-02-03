@@ -1,30 +1,32 @@
+import { useTranslation } from "react-i18next";
 import type { TimelineItemProps } from "../../types/TimelineItem";
 import { Timeline } from "../generics/Timeline";
 
 export function ExperienceSection() {
-	const schoolHistory: TimelineItemProps[] = [
+	const { t } = useTranslation();
+	const experienceHistory: TimelineItemProps[] = [
 		{
 			from: new Date(),
 			to: new Date(),
-			title: "Alternant ingénieur Cloud & Software",
-			subtitle: "SAP France",
-			description: "Université de technologie de Compiègne",
+			title: t("experienceSection.apprenticeshipSAP.title"),
+			subtitle: t("experienceSection.apprenticeshipSAP.company"),
+			description: t("experienceSection.apprenticeshipSAP.description"),
 		},
 		{
 			from: new Date(),
 			to: new Date(),
-			title: "Stagiaire développeur Cloud Full-Stack",
-			subtitle: "IZHO",
-			description: "IUT de Paris Cité",
+			title: t("experienceSection.internshipIZHO.title"),
+			subtitle: t("experienceSection.internshipIZHO.company"),
+			description: t("experienceSection.internshipIZHO.description"),
 		},
 		{
 			from: new Date(),
 			to: new Date(),
-			title: "Stagiaire développeur web et mobile",
-			subtitle: "SIMPLOS",
-			description: "IUT de Paris Cité",
+			title: t("experienceSection.internshipSIMPLOS.title"),
+			subtitle: t("experienceSection.internshipSIMPLOS.company"),
+			description: t("experienceSection.internshipSIMPLOS.description"),
 		},
 	];
 
-	return <Timeline timelineItems={schoolHistory} />;
+	return <Timeline timelineItems={experienceHistory} />;
 }

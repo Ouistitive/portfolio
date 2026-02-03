@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Navbar } from "../components/business/Navbar";
 import { Title } from "../components/generics/Title";
 import { ExperienceSection } from "../components/sections/ExperienceSection";
@@ -8,13 +9,21 @@ import { SkillsSection } from "../components/sections/SkillsSection";
 import type { NavbarSection } from "../types/NavbarSection";
 
 export function HomePage() {
+	const { t } = useTranslation();
 	const navbarSections: NavbarSection[] = [
-		{ title: "Compétences", link: "#skills", Section: SkillsSection },
-		{ title: "Projets", link: "#projects", Section: ProjectsSection },
-		{ title: "Expérience", link: "#experience", Section: ExperienceSection },
-		{ title: "Formations", link: "#school", Section: SchoolSection },
-		{ title: "À propos", link: "#about" },
-		{ title: "Contact", link: "#contact" },
+		{ title: t("navbar.skills"), link: "#skills", Section: SkillsSection },
+		{
+			title: t("navbar.projects"),
+			link: "#projects",
+			Section: ProjectsSection,
+		},
+		{
+			title: t("navbar.experience"),
+			link: "#experience",
+			Section: ExperienceSection,
+		},
+		{ title: t("navbar.school"), link: "#school", Section: SchoolSection },
+		{ title: t("navbar.contact"), link: "#contact" },
 	];
 
 	return (

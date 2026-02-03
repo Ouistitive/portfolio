@@ -1,31 +1,31 @@
+import { useTranslation } from "react-i18next";
 import { IoSchool } from "react-icons/io5";
 import type { TimelineItemProps } from "../../types/TimelineItem";
 import { Timeline } from "../generics/Timeline";
 
 export function SchoolSection() {
+	const { t } = useTranslation();
 	const schoolHistory: TimelineItemProps[] = [
 		{
 			from: new Date(),
 			to: new Date(),
-			title:
-				"Diplôme d'ingénieur — Génie informatique filière Infrastructure et Système d'information",
-			subtitle: "Université de Technologie de Compiègne",
-			description: "Université de technologie de Compiègne",
+			title: t("schoolSection.utc.title"),
+			subtitle: t("schoolSection.utc.school"),
+			description: t("schoolSection.utc.description"),
 		},
 		{
 			from: new Date(),
 			to: new Date(),
-			title:
-				"BUT Informatique — Réalisation d'applications : conception, développement, validation",
-			subtitle: "IUT de Paris Cité",
-			description: "IUT de Paris Cité",
+			title: t("schoolSection.iut.title"),
+			subtitle: t("schoolSection.iut.school"),
+			description: t("schoolSection.iut.description"),
 		},
 		{
 			from: new Date(),
 			to: new Date(),
-			title: "Baccalauréat général — Spécialités Informatique et Mathématique",
-			subtitle: "Lycée Rosa Parks",
-			description: "IUT de Paris Cité",
+			title: t("schoolSection.bac.title"),
+			subtitle: t("schoolSection.bac.school"),
+			description: t("schoolSection.bac.description"),
 		},
 	];
 
