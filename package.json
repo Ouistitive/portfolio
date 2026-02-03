@@ -12,6 +12,7 @@
 		"format": "npx @biomejs/biome check --write"
 	},
 	"dependencies": {
+		"@radix-ui/react-dialog": "^1.1.15",
 		"@tailwindcss/vite": "^4.1.18",
 		"react": "^19.2.0",
 		"react-dom": "^19.2.0",
