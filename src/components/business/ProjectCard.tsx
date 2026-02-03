@@ -29,7 +29,7 @@ export function ProjectCard({
 					<ImageFullscreen
 						src={preview}
 						alt={"Image"}
-						className="mt-5 rounded-lg"
+						className="mx-auto mt-5 w-[85%] rounded-lg"
 					/>
 				) : null}
 			</div>
