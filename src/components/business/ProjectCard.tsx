@@ -1,9 +1,12 @@
+import { Badge } from "../generics/Badge";
 import { Card } from "../generics/Card";
 import { GithubBadge } from "./GithubBadge";
 
-interface ProjectCardProps {
+export interface ProjectCardProps {
 	title: string;
 	description: string;
+	tags: string[];
+	preview?: string;
 
 	viewGithub: boolean;
 }
@@ -11,6 +14,7 @@ interface ProjectCardProps {
 export function ProjectCard({
 	title,
 	description,
+	tags,
 	viewGithub,
 }: ProjectCardProps) {
 	return (
@@ -18,10 +22,15 @@ export function ProjectCard({
 			<div>
 				<p className="font-bold text-2xl">{title}</p>
 				<hr className="my-2 text-border" />
-				<p>{description}</p>
+				<p className="whitespace-pre-line">{description}</p>
 			</div>
 
-			<footer className="mt-auto flex">
+			<footer className="mt-auto flex flex-col flex-wrap gap-3">
+				<div className="flex gap-2">
+					{tags.map((tag) => (
+						<Badge key={tag} title={tag} />
+					))}
+				</div>
 				{viewGithub ? <GithubBadge /> : null}
 			</footer>
 		</Card>
