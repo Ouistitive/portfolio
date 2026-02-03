@@ -44,56 +44,56 @@
 	"projectsSection": {
 		"subheader": "Here's my recent projects!",
 		"blackfridaySimulator": {
-			"title": "Simulation de Black Friday",
-			"description": "Simulation en Go visant à modéliser les mouvements de foule lors du Black Friday afin d'identifier l'agencement de magasin optimal permettant aux agents de parcourir l'ensemble de l'espace.\n\nLe système repose sur plusieurs types d'agents : des clients classiques, des clients égoïstes pouvant voler d'autres agents, et des agents de sécurité chargés de réduire le taux de vol dans leur champ de vision",
+			"title": "Black Friday simulation",
+			"description": "A Go-based simulation designed to model crowd dynamics during Black Friday, with the goal of identifying an optimal store layout that allows agents to navigate the entire store efficiently.\n\nThe system includes several types of agents: standard customers, selfish customers capable of stealing from other agents, and security guards responsible for reducing theft within their field of view.",
 			"tags": [
-				"Système multi-agents",
+				"Multi-agents System",
 				"Go / Ebiten",
-				"Gestion de la concurrence"
+				"Concurrency management"
 			]
 		},
 		"bobby": {
-			"title": "Gestion des inventaires des associations de l'UTC",
-			"description": "Application web de gestion des objets des associations de l'UTC en Laravel et React. L'application permet aux associations de visualiser leur inventaire et faire des demandes d'emprunts d'objets à d'autres associations.",
+			"title": "Bobby: Inventory management for UTC Student Organizations",
+			"description": "Bobby is a web application in Laravel and React to manage UTC student organizations' equipments. This application allows student organizations to display their inventory and create borrow requests from other associations.",
 			"tags": ["PHP / Laravel", "React / Typescript"]
 		},
 		"kanamaster": {
-			"title": "KanaMaster",
-			"description": "Application mobile de quiz en Java pour apprendre les principaux caractères japonais.",
+			"title": "KanaMaster: Mobile application quiz",
+			"description": "KanaMaster is a Java-based mobile quiz application designed to help users learn the main Japanese characters known as kana.",			
 			"tags": ["Java", "Android Studio"]
 		}
 	},
 	"experienceSection": {
 		"apprenticeshipSAP": {
-			"title": "Alternant ingénieur Cloud & Software",
+			"title": "Cloud & Software Engineer Apprentice",
 			"company": "SAP France",
 			"description": "Université de technologie de Compiègne"
 		},
 		"internshipIZHO": {
-			"title": "Stagiaire développeur Cloud Full-Stack",
+			"title": "Developer Cloud Full-Stack Intern",
 			"company": "IZHO",
 			"description": "IUT de Paris Cité"
 		},
 		"internshipSIMPLOS": {
-			"title": "Stagiaire développeur web et mobile",
+			"title": "Developer Web & Mobile Intern",
 			"company": "SIMPLOS",
 			"description": "IUT de Paris Cité"
 		}
 	},
 	"schoolSection": {
 		"utc": {
-			"title": "Diplôme d'ingénieur — Génie informatique filière Infrastructure et Système d'information",
+			"title": "Master's Degree in Computer Engineering — Specialization in Infrastructure and Information Systems",
 			"school": "Université de Technologie de Compiègne",
 			"description": "Université de Technologie de Compiègne"
 		},
 		"iut": {
-			"title": "BUT Informatique — Réalisation d'applications : conception, développement, validation",
-			"school": "IUT de Paris Cité",
+			"title": "Bachelor of Technology in Computer Science — Application Development: Design, Development, and Testing",
+			"school": "University Institute of Technology, Paris Cité (IUT Paris Cité)",
 			"description": "IUT de Paris Cité"
 		},
 		"bac": {
-			"title": "Baccalauréat général — Spécialités Informatique et Mathématique",
-			"school": "Lycée Rosa Parks",
+			"title": "French Baccalaureate — Major in Computer Science and Mathematics",
+			"school": "Rosa Parks High School",
 			"description": "IUT de Paris Cité"
 		}
 	}
