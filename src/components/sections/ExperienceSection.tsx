@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import type { TimelineItemProps } from "../../types/TimelineItem";
+import { SubHeader } from "../generics/SubHeader";
 import { Timeline } from "../generics/Timeline";
 
 export function ExperienceSection() {
@@ -28,5 +29,10 @@ export function ExperienceSection() {
 		},
 	];
 
-	return <Timeline timelineItems={experienceHistory} />;
+	return (
+		<div className="flex flex-col items-center">
+			<SubHeader title={t("experienceSection.subheader")} />
+			<Timeline timelineItems={experienceHistory} />
+		</div>
+	);
 }
