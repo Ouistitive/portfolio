@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { IoSchool } from "react-icons/io5";
 import type { TimelineItemProps } from "../../types/TimelineItem";
+import { SubHeader } from "../generics/SubHeader";
 import { Timeline } from "../generics/Timeline";
 
 export function SchoolSection() {
@@ -29,5 +30,10 @@ export function SchoolSection() {
 		},
 	];
 
-	return <Timeline Icon={IoSchool} timelineItems={schoolHistory} />;
+	return (
+		<div className="flex flex-col items-center">
+			<SubHeader title={t("schoolSection.subheader")} />
+			<Timeline Icon={IoSchool} timelineItems={schoolHistory} />
+		</div>
+	);
 }

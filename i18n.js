@@ -10,7 +10,7 @@ i18n
 	// for all options read: https://www.i18next.com/overview/configuration-options
 	.init({
 		debug: true,
-		fallbackLng: "en",
+		fallbackLng: "fr",
 		keySeparator: ".",
 		pluralSeparator: ".",
 		compatibilityJSON: "v4",

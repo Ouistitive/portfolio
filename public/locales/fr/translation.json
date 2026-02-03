@@ -64,6 +64,7 @@
 		}
 	},
 	"experienceSection": {
+		"subheader": "Mes expériences professionnelles",
 		"apprenticeshipSAP": {
 			"title": "Alternant ingénieur Cloud & Software",
 			"company": "SAP France",
@@ -81,6 +82,7 @@
 		}
 	},
 	"schoolSection": {
+		"subheader": "Mon parcours académique et mes certifications",
 		"utc": {
 			"title": "Diplôme d'ingénieur — Génie informatique filière Infrastructure et Système d'information",
 			"school": "Université de Technologie de Compiègne",

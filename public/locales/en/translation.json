@@ -60,6 +60,7 @@
 		}
 	},
 	"experienceSection": {
+		"subheader": "My professional experiences",
 		"apprenticeshipSAP": {
 			"title": "Cloud & Software Engineer Apprentice",
 			"company": "SAP France",
@@ -77,6 +78,7 @@
 		}
 	},
 	"schoolSection": {
+		"subheader": "My academic background and certifications!",
 		"utc": {
 			"title": "Master's Degree in Computer Engineering — Specialization in Infrastructure and Information Systems",
 			"school": "Université de Technologie de Compiègne",

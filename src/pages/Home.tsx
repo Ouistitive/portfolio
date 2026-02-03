@@ -35,7 +35,7 @@ export function HomePage() {
 				<div
 					key={section.link}
 					id={section.link}
-					className={`py-10 ${idx % 2 === 0 ? "bg-bg" : "bg-bg-surface"}`}
+					className={`pt-10 pb-19 ${idx % 2 === 0 ? "bg-bg" : "bg-bg-surface"}`}
 				>
 					<Title key={section.link} title={section.title} />
 					{section.Section ? <section.Section /> : null}

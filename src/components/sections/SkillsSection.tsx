@@ -11,43 +11,47 @@ export function SkillsSection() {
 			key: "backend",
 			title: t("skillsSection.backend.title"),
 			description: t("skillsSection.backend.description"),
-			tags: [
-				"Node.JS",
-				"Java",
-				"Go",
-				"Express",
-				"SAP CAP (CDS)",
-				"SpringBoot",
-				"Python",
-			],
+			tags: t("skillsSection.backend.tags", {
+				returnObjects: true,
+			}) as string[],
 		},
 		{
 			Icon: FaCode,
 			key: "frontend",
 			title: t("skillsSection.frontend.title"),
 			description: t("skillsSection.frontend.description"),
-			tags: ["React", "TypeScript", "Tailwind CSS", "SAPUI5", "HTML", "CSS"],
+			tags: t("skillsSection.frontend.tags", {
+				returnObjects: true,
+			}) as string[],
 		},
 		{
 			Icon: MdSchema,
 			key: "architecture",
 			title: t("skillsSection.architecture.title"),
 			description: t("skillsSection.architecture.description"),
-			tags: ["Diagrammes UML", "Programmation orientée objet"],
+			tags: t("skillsSection.architecture.tags", {
+				returnObjects: true,
+			}) as string[],
 		},
 		{
 			Icon: FaCloud,
 			key: "cloud",
 			title: t("skillsSection.cloud.title"),
 			description: t("skillsSection.cloud.description"),
-			tags: ["SAP BTP"],
+			tags: t("skillsSection.cloud.tags", { returnObjects: true }) as string[],
 		},
 	];
 
 	return (
 		<section className="mx-60 grid grid-cols-3 gap-8">
 			{skills.map((skill) => (
-				<SkillCard key={skill.key} {...skill} />
+				<SkillCard
+					key={skill.key}
+					Icon={skill.Icon}
+					title={skill.title}
+					description={skill.description}
+					tags={skill.tags}
+				/>
 			))}
 		</section>
 	);
