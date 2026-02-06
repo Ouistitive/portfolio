@@ -2,7 +2,7 @@
 	"navbar": {
 		"skills": "Compétences",
 		"projects": "Projets",
-		"experience": "Expérience",
+		"experience": "Expériences",
 		"school": "Formations",
 		"contact": "Contact"
 	},
@@ -66,16 +66,22 @@
 	"experienceSection": {
 		"subheader": "Mes expériences professionnelles",
 		"apprenticeshipSAP": {
+			"from": "Septembre 2024",
+			"to": "Maintenant",
 			"title": "Alternant ingénieur Cloud & Software",
 			"company": "SAP France",
 			"description": "Université de technologie de Compiègne"
 		},
 		"internshipIZHO": {
+			"from": "Avril 2024",
+			"to": "Août 2024",
 			"title": "Stagiaire développeur Cloud Full-Stack",
 			"company": "IZHO",
 			"description": "IUT de Paris Cité"
 		},
 		"internshipSIMPLOS": {
+			"from": "Avril 2023",
+			"to": "Juin 2023",
 			"title": "Stagiaire développeur web et mobile",
 			"company": "SIMPLOS",
 			"description": "IUT de Paris Cité"
@@ -84,19 +90,36 @@
 	"schoolSection": {
 		"subheader": "Mon parcours académique et mes certifications",
 		"utc": {
+			"from": "2024",
+			"to": "En cours",
 			"title": "Diplôme d'ingénieur — Génie informatique filière Infrastructure et Système d'information",
 			"school": "Université de Technologie de Compiègne",
 			"description": "Université de Technologie de Compiègne"
 		},
 		"iut": {
+			"from": "2021",
+			"to": "2024",
 			"title": "BUT Informatique — Réalisation d'applications : conception, développement, validation",
 			"school": "IUT de Paris Cité",
 			"description": "IUT de Paris Cité"
 		},
 		"bac": {
+			"from": "2018",
+			"to": "2021",
 			"title": "Baccalauréat général — Spécialités Informatique et Mathématique",
 			"school": "Lycée Rosa Parks",
 			"description": "IUT de Paris Cité"
 		}
+	},
+	"contactSection": {
+		"subheader": "Restons en contact !",
+		"contacts": {
+			"github": "Mes futurs projets",
+			"linkedin": "Mes prochaines expériences",
+			"email": "Discutons !"
+		}
+	},
+	"buttons": {
+		"github": "Voir sur Github"
 	}
 }

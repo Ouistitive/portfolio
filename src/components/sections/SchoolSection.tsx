@@ -8,22 +8,22 @@ export function SchoolSection() {
 	const { t } = useTranslation();
 	const schoolHistory: TimelineItemProps[] = [
 		{
-			from: new Date(),
-			to: new Date(),
+			from: t("schoolSection.utc.from"),
+			to: t("schoolSection.utc.to"),
 			title: t("schoolSection.utc.title"),
 			subtitle: t("schoolSection.utc.school"),
 			description: t("schoolSection.utc.description"),
 		},
 		{
-			from: new Date(),
-			to: new Date(),
+			from: t("schoolSection.iut.from"),
+			to: t("schoolSection.iut.to"),
 			title: t("schoolSection.iut.title"),
 			subtitle: t("schoolSection.iut.school"),
 			description: t("schoolSection.iut.description"),
 		},
 		{
-			from: new Date(),
-			to: new Date(),
+			from: t("schoolSection.bac.from"),
+			to: t("schoolSection.bac.to"),
 			title: t("schoolSection.bac.title"),
 			subtitle: t("schoolSection.bac.school"),
 			description: t("schoolSection.bac.description"),

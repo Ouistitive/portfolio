@@ -24,7 +24,7 @@ export function HomePage() {
 			Section: ExperienceSection,
 		},
 		{ title: t("navbar.school"), link: "#school", Section: SchoolSection },
-		{ title: t("navbar.contact"), link: "#contact" },
+		{ title: t("navbar.contact"), link: "#contact", Section: ContactSection },
 	];
 
 	return (

@@ -2,7 +2,7 @@
 	"navbar": {
 		"skills": "Skills",
 		"projects": "Projects",
-		"experience": "Experience",
+		"experience": "Experiences",
 		"school": "School",
 		"contact": "Contact"
 	},
@@ -62,16 +62,22 @@
 	"experienceSection": {
 		"subheader": "My professional experiences",
 		"apprenticeshipSAP": {
+			"from": "September 2024",
+			"to": "Now",
 			"title": "Cloud & Software Engineer Apprentice",
 			"company": "SAP France",
 			"description": "Université de technologie de Compiègne"
 		},
 		"internshipIZHO": {
+			"from": "April 2024",
+			"to": "August 2024",
 			"title": "Developer Cloud Full-Stack Intern",
 			"company": "IZHO",
 			"description": "IUT de Paris Cité"
 		},
 		"internshipSIMPLOS": {
+			"from": "April 2023",
+			"to": "June 2023",
 			"title": "Developer Web & Mobile Intern",
 			"company": "SIMPLOS",
 			"description": "IUT de Paris Cité"
@@ -80,19 +86,36 @@
 	"schoolSection": {
 		"subheader": "My academic background and certifications!",
 		"utc": {
+			"from": "2024",
+			"to": "Now",
 			"title": "Master's Degree in Computer Engineering — Specialization in Infrastructure and Information Systems",
 			"school": "Université de Technologie de Compiègne",
 			"description": "Université de Technologie de Compiègne"
 		},
 		"iut": {
+			"from": "2021",
+			"to": "2024",
 			"title": "Bachelor of Technology in Computer Science — Application Development: Design, Development, and Testing",
 			"school": "University Institute of Technology, Paris Cité (IUT Paris Cité)",
 			"description": "IUT de Paris Cité"
 		},
 		"bac": {
+			"from": "2018",
+			"to": "2021",
 			"title": "French Baccalaureate — Major in Computer Science and Mathematics",
 			"school": "Rosa Parks High School",
 			"description": "IUT de Paris Cité"
 		}
+	},
+	"contactSection": {
+		"subheader": "Let's connect!",
+		"contacts": {
+			"github": "My future projects",
+			"linkedin": "My next experiences",
+			"email": "Let's discuss!"
+		}
+	},
+	"buttons": {
+		"github": "View on Github"
 	}
 }
