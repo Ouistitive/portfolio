@@ -1,5 +1,6 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { useCallback, useRef, useState } from "react";
+import { IoMdClose } from "react-icons/io";
 
 interface ImageFullscreenProps {
 	src: string;
@@ -76,12 +77,11 @@ export default function ImageFullscreen({
 					type="button"
 					onClick={handleOpen}
 					className={`cursor-pointer overflow-hidden rounded transition-opacity hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-blue-500 ${thumbnailClassName}`}
-					aria-label={`Ouvrir ${alt} en plein écran`}
 				>
 					<img
 						src={src}
 						alt={alt}
-						className={`block h-full w-full object-cover ${className}`}
+						className={`block max-h-fit max-w-fit object-contain ${className}`}
 					/>
 				</button>
 			</Dialog.Trigger>
@@ -97,7 +97,11 @@ export default function ImageFullscreen({
 
 				<Dialog.Content
 					className="fixed inset-0 z-9999 flex items-center justify-center"
-					style={{ outline: "none" }}
+					onPointerDown={(e) => {
+						if (e.target === e.currentTarget) {
+							handleClose();
+						}
+					}}
 				>
 					<Dialog.Close asChild>
 						<button
@@ -107,23 +111,8 @@ export default function ImageFullscreen({
 								opacity: animState === "to" ? 1 : 0,
 								transition: "opacity 200ms ease 150ms",
 							}}
-							aria-label="Close button"
 						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								className="h-6 w-6"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke="currentColor"
-								strokeWidth={2}
-							>
-								<title>Close button</title>
-								<path
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									d="M6 18L18 6M6 6l12 12"
-								/>
-							</svg>
+							<IoMdClose size={24} className="cursor-pointer" />
 						</button>
 					</Dialog.Close>
 

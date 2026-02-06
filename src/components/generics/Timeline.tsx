@@ -9,8 +9,8 @@ interface TimelineProps {
 
 interface TimelineItemExtraProps {
 	Icon?: IconType;
-	from: Date;
-	to: Date;
+	from: string;
+	to: string;
 	title: string;
 	subtitle: string;
 	description: string;
@@ -33,7 +33,7 @@ function TimelineItem({
 				</div>
 				<div className="rounded border border-border px-2 py-1 text-xs">
 					<p>
-						{from.getFullYear()} - {to.getFullYear()}
+						{from} - {to}
 					</p>
 				</div>
 			</div>

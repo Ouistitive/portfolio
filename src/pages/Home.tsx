@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Navbar } from "../components/business/Navbar";
 import { Title } from "../components/generics/Title";
+import { ContactSection } from "../components/sections/ContactSection";
 import { ExperienceSection } from "../components/sections/ExperienceSection";
 import { IntroductionSection } from "../components/sections/IntroductionSection";
 import { ProjectsSection } from "../components/sections/ProjectsSection";
@@ -23,7 +24,7 @@ export function HomePage() {
 			Section: ExperienceSection,
 		},
 		{ title: t("navbar.school"), link: "#school", Section: SchoolSection },
-		{ title: t("navbar.contact"), link: "#contact" },
+		{ title: t("navbar.contact"), link: "#contact", Section: ContactSection },
 	];
 
 	return (
