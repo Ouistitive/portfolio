@@ -43,7 +43,7 @@ export function SkillsSection() {
 	];
 
 	return (
-		<section className="mx-60 grid grid-cols-3 gap-8">
+		<section className="mx-7 flex flex-col gap-8 md:mx-60 md:grid md:grid-cols-3">
 			{skills.map((skill) => (
 				<SkillCard
 					key={skill.key}

@@ -3,5 +3,5 @@ interface SubHeader {
 }
 
 export function SubHeader({ title }: SubHeader) {
-	return <p className="text-2xl text-text-subtitle">{title}</p>;
+	return <p className="text-center text-2xl text-text-subtitle">{title}</p>;
 }

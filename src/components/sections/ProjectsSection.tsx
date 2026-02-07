@@ -36,7 +36,7 @@ export function ProjectsSection() {
 	return (
 		<section className="flex flex-col items-center gap-15">
 			<SubHeader title={t("projectsSection.subheader")} />
-			<aside className="mx-60 grid grid-cols-2 gap-8">
+			<aside className="mx-7 grid gap-8 md:mx-60 md:grid-cols-2">
 				{projects.map((project) => (
 					<ProjectCard key={project.title} {...project} />
 				))}
