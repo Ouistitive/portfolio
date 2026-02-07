@@ -14,4 +14,5 @@ export interface TimelineItemProps {
 	title: string;
 	subtitle: string;
 	description: string;
+	tags?: string[];
 }

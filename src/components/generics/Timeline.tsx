@@ -1,5 +1,6 @@
 import type { IconType } from "react-icons";
-import type { TimelineItemProps } from "../../types/TimelineItem";
+import type { TimelineItemProps } from "../../types/types";
+import { Badge } from "./Badge";
 import { Card } from "./Card";
 
 interface TimelineProps {
@@ -14,6 +15,7 @@ interface TimelineItemExtraProps {
 	title: string;
 	subtitle: string;
 	description: string;
+	tags: string[];
 }
 
 function TimelineItem({
@@ -23,6 +25,7 @@ function TimelineItem({
 	title,
 	subtitle,
 	description,
+	tags,
 }: TimelineItemExtraProps) {
 	return (
 		<Card>
@@ -39,6 +42,12 @@ function TimelineItem({
 			</div>
 			<p className="italic">{subtitle}</p>
 			<p>{description}</p>
+
+			<div className="mt-5 flex gap-2">
+				{tags?.map((t) => (
+					<Badge key={t} title={t}></Badge>
+				))}
+			</div>
 		</Card>
 	);
 }
@@ -73,6 +82,7 @@ export function Timeline({ Icon, timelineItems }: TimelineProps) {
 								title={item.title}
 								subtitle={item.subtitle}
 								description={item.description}
+								tags={item.tags ?? []}
 							/>
 						</li>
 					))}
