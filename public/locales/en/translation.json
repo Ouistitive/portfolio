@@ -12,32 +12,42 @@
 		"description": "coucou"
 	},
 	"skillsSection": {
+		"subheader": "My mains skills",
 		"backend": {
 			"title": "Backend",
-			"description": "API conception and business logic",
+			"description": "API conception and implementation of the business logic.",
 			"tags": [
 				"Node.JS",
 				"Java",
 				"Go",
 				"Express",
 				"SAP CAP (CDS)",
+				"Python",
 				"SpringBoot",
-				"Python"
+				"Redis"
 			]
 		},
 		"frontend": {
 			"title": "Frontend",
-			"description": "Modern and maintainable web interfaces",
-			"tags": ["React", "TypeScript", "Tailwind CSS", "SAPUI5", "HTML", "CSS"]
+			"description": "Development of reactive and fluide web interfaces with a focus on accessibility and polished UX.",
+			"tags": [
+				"React",
+				"TypeScript",
+				"Tailwind CSS",
+				"SAPUI5",
+				"HTML",
+				"CSS",
+				"Vue.JS"
+			]
 		},
 		"architecture": {
 			"title": "Application architecture",
-			"description": "Conception of applications",
+			"description": "Conception of the architecture, components and data flows to ensure maintenability, performance and scalability.",
 			"tags": ["UML Diagram", "Object oriented programming"]
 		},
 		"cloud": {
 			"title": "Cloud",
-			"description": "",
+			"description": "Deploying and orchestrating applications in the cloud.",
 			"tags": ["SAP BTP"]
 		}
 	},

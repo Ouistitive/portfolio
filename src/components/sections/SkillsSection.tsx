@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { FaCloud, FaCode, FaServer } from "react-icons/fa";
 import { MdSchema } from "react-icons/md";
 import { SkillCard, type SkillCardProps } from "../business/SkillCard";
+import { SubHeader } from "../generics/SubHeader";
 
 export function SkillsSection() {
 	const { t } = useTranslation();
@@ -43,16 +44,19 @@ export function SkillsSection() {
 	];
 
 	return (
-		<section className="mx-7 flex flex-col gap-8 md:mx-60 md:grid md:grid-cols-3">
-			{skills.map((skill) => (
-				<SkillCard
-					key={skill.key}
-					Icon={skill.Icon}
-					title={skill.title}
-					description={skill.description}
-					tags={skill.tags}
-				/>
-			))}
+		<section className="mx-7 flex flex-col gap-15">
+			<SubHeader title={t("skillsSection.subheader")} />
+			<div className="gap-8 md:mx-60 md:grid md:grid-cols-3">
+				{skills.map((skill) => (
+					<SkillCard
+						key={skill.key}
+						Icon={skill.Icon}
+						title={skill.title}
+						description={skill.description}
+						tags={skill.tags}
+					/>
+				))}
+			</div>
 		</section>
 	);
 }

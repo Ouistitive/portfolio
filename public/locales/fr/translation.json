@@ -12,32 +12,46 @@
 		"description": "coucou"
 	},
 	"skillsSection": {
+		"subheader": "Mes principales compétences",
 		"backend": {
 			"title": "Backend",
-			"description": "Conception d'API et logique métier",
+			"description": "Conception d'API et implémentation de la logique métier",
 			"tags": [
 				"Node.JS",
 				"Java",
 				"Go",
 				"Express",
 				"SAP CAP (CDS)",
+				"Python",
 				"SpringBoot",
-				"Python"
+				"Redis"
 			]
 		},
 		"frontend": {
 			"title": "Frontend",
-			"description": "Interfaces web modernes et performantes",
-			"tags": ["React", "TypeScript", "Tailwind CSS", "SAPUI5", "HTML", "CSS"]
+			"description": "Développement d'interfaces réactives et fluides, en mettant l'accent sur l'accessibilité et une UX soignée.",
+			"tags": [
+				"React",
+				"TypeScript",
+				"Tailwind CSS",
+				"SAPUI5",
+				"HTML",
+				"CSS",
+				"Vue.JS"
+			]
 		},
 		"architecture": {
 			"title": "Architecture applicative",
-			"description": "Conception et structuration d'applications",
-			"tags": ["Diagramme UML", "Programmation orientée objet"]
+			"description": "Conception de l'architecture, des composants et des flux pour assurer maintenabilité, performance et évolutivité des projets.",
+			"tags": [
+				"Diagramme UML",
+				"Programmation orientée objet",
+				"Design Patterns"
+			]
 		},
 		"cloud": {
 			"title": "Cloud",
-			"description": "",
+			"description": "Déploiement et orchestration d'applications dans le cloud.",
 			"tags": ["SAP BTP"]
 		}
 	},

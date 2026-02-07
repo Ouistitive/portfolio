@@ -9,7 +9,7 @@ export interface ProjectCardProps {
 	tags: string[];
 	preview?: string;
 
-	viewGithub: boolean;
+	viewGithub?: string;
 }
 
 export function ProjectCard({
@@ -42,7 +42,7 @@ export function ProjectCard({
 						<Badge key={tag} title={tag} />
 					))}
 				</div>
-				{viewGithub ? <GithubBadge /> : null}
+				{viewGithub ? <GithubBadge link={viewGithub} /> : null}
 			</footer>
 		</Card>
 	);

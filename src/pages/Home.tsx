@@ -7,7 +7,7 @@ import { IntroductionSection } from "../components/sections/IntroductionSection"
 import { ProjectsSection } from "../components/sections/ProjectsSection";
 import { SchoolSection } from "../components/sections/SchoolSection";
 import { SkillsSection } from "../components/sections/SkillsSection";
-import type { NavbarSection } from "../types/NavbarSection";
+import type { NavbarSection } from "../types/types";
 
 export function HomePage() {
 	const { t } = useTranslation();
