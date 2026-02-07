@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { IoSchool } from "react-icons/io5";
-import type { TimelineItemProps } from "../../types/TimelineItem";
+import type { TimelineItemProps } from "../../types/types";
 import { SubHeader } from "../generics/SubHeader";
 import { Timeline } from "../generics/Timeline";
 

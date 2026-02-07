@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import type { NavbarSection } from "../../types/NavbarSection";
+import type { NavbarSection } from "../../types/types";
 import { LanguageOptions } from "./LanguageOptions";
 import { ThemeToggle } from "./ThemeToggle";
 

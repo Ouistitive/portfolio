@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import BlackFridayPreview from "../../assets/blackfriday.png";
+import { constants } from "../../utils/constants";
 import { ProjectCard, type ProjectCardProps } from "../business/ProjectCard";
 import { SubHeader } from "../generics/SubHeader";
 
@@ -13,7 +14,7 @@ export function ProjectsSection() {
 				returnObjects: true,
 			}) as string[],
 			preview: BlackFridayPreview,
-			viewGithub: true,
+			viewGithub: constants.BLACK_FRIDAY_LINK,
 		},
 		{
 			title: t("projectsSection.bobby.title"),
@@ -21,7 +22,6 @@ export function ProjectsSection() {
 			tags: t("projectsSection.bobby.tags", {
 				returnObjects: true,
 			}) as string[],
-			viewGithub: true,
 		},
 		{
 			title: t("projectsSection.kanamaster.title"),
@@ -29,14 +29,14 @@ export function ProjectsSection() {
 			tags: t("projectsSection.kanamaster.tags", {
 				returnObjects: true,
 			}) as string[],
-			viewGithub: true,
+			viewGithub: constants.KANA_MASTER_LINK,
 		},
 	];
 
 	return (
 		<section className="flex flex-col items-center gap-15">
 			<SubHeader title={t("projectsSection.subheader")} />
-			<aside className="mx-60 grid grid-cols-2 gap-8">
+			<aside className="mx-7 grid gap-8 md:mx-60 md:grid-cols-2">
 				{projects.map((project) => (
 					<ProjectCard key={project.title} {...project} />
 				))}

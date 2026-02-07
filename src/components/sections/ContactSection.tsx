@@ -11,7 +11,7 @@ export function ContactSection() {
 	return (
 		<section className="flex flex-col items-center gap-20">
 			<SubHeader title={t("contactSection.subheader")} />
-			<div className="flex w-full justify-center gap-15">
+			<div className="flex flex-col justify-center gap-5 md:w-full md:flex-row md:gap-15">
 				<ContactCard
 					Icon={FaGithub}
 					text={t("contactSection.contacts.github")}
