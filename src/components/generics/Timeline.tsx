@@ -9,7 +9,7 @@ interface TimelineProps {
 }
 
 interface TimelineItemExtraProps {
-	Icon?: IconType;
+	img?: string;
 	from: string;
 	to: string;
 	title: string;
@@ -19,7 +19,7 @@ interface TimelineItemExtraProps {
 }
 
 function TimelineItem({
-	Icon,
+	img,
 	from,
 	to,
 	title,
@@ -31,8 +31,15 @@ function TimelineItem({
 		<Card>
 			<div className="flex items-start justify-between">
 				<div className="flex items-center gap-2">
-					{Icon ? <Icon /> : null}
-					<p className="font-bold">{title}</p>
+					{img ? (
+						<div className="flex h-12 w-12 items-center rounded-md">
+							<img alt="" src={img} />
+						</div>
+					) : null}
+					<div>
+						<p className="font-bold">{title}</p>
+						<p className="italic">{subtitle}</p>
+					</div>
 				</div>
 				<div className="rounded border border-border px-2 py-1 text-xs">
 					<p>
@@ -40,19 +47,20 @@ function TimelineItem({
 					</p>
 				</div>
 			</div>
-			<p className="italic">{subtitle}</p>
-			<p>{description}</p>
+			<p className="mt-4">{description}</p>
 
-			<div className="mt-5 flex gap-2">
-				{tags?.map((t) => (
-					<Badge key={t} title={t}></Badge>
-				))}
-			</div>
+			{tags.length !== 0 ? (
+				<div className="mt-5 flex gap-2">
+					{tags?.map((t) => (
+						<Badge key={t} title={t}></Badge>
+					))}
+				</div>
+			) : null}
 		</Card>
 	);
 }
 
-export function Timeline({ Icon, timelineItems }: TimelineProps) {
+export function Timeline({ timelineItems }: TimelineProps) {
 	return (
 		<section className="flex justify-center pt-20">
 			<div className="w-230">
@@ -76,7 +84,7 @@ export function Timeline({ Icon, timelineItems }: TimelineProps) {
 							</div>
 
 							<TimelineItem
-								Icon={Icon}
+								img={item.img}
 								from={item.from}
 								to={item.to}
 								title={item.title}

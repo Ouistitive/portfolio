@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { IoSchool } from "react-icons/io5";
+import IUTLogo from "../../assets/certifications/IUT.jpg";
+import UTCLogo from "../../assets/certifications/UTC.png";
 import type { TimelineItemProps } from "../../types/types";
 import { SubHeader } from "../generics/SubHeader";
 import { Timeline } from "../generics/Timeline";
@@ -8,6 +10,7 @@ export function SchoolSection() {
 	const { t } = useTranslation();
 	const schoolHistory: TimelineItemProps[] = [
 		{
+			img: UTCLogo,
 			from: t("schoolSection.utc.from"),
 			to: t("schoolSection.utc.to"),
 			title: t("schoolSection.utc.title"),
@@ -15,6 +18,7 @@ export function SchoolSection() {
 			description: t("schoolSection.utc.description"),
 		},
 		{
+			img: IUTLogo,
 			from: t("schoolSection.iut.from"),
 			to: t("schoolSection.iut.to"),
 			title: t("schoolSection.iut.title"),
