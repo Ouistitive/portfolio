@@ -11,6 +11,7 @@
 		"preview": "vite preview",
 		"prepare": "husky",
 		"format": "npx @biomejs/biome check --write",
+		"predeploy": "npm run build",
 		"deploy": "gh-pages -d dist"
 	},
 	"dependencies": {
