@@ -84,7 +84,7 @@
 			"to": "Maintenant",
 			"title": "Alternant ingénieur Cloud & Software",
 			"company": "SAP France",
-			"description": "Université de technologie de Compiègne",
+			"description": "Conception et développement Full-Stack d'une plateforme cloud sur SAP BTP permettant la gestion des accès et des permissions sur des datalakes Azure et SAP HANA, afin de fournir aux équipes AI des environnements data sécurisés, avec backend SAP CAP/CDS et interfaces React utilisant UI5 Web Components.",
 			"tags": [
 				"SAP BTP",
 				"Full-Stack",
