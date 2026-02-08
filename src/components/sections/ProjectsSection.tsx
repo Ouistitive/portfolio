@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
-import BlackFridayPreview from "../../assets/blackfriday.png";
+import BlackFridayPreview from "../../assets/projects/blackfriday.png";
+import BobbyPreview from "../../assets/projects/bobby.png";
 import { constants } from "../../utils/constants";
 import { ProjectCard, type ProjectCardProps } from "../business/ProjectCard";
 import { SubHeader } from "../generics/SubHeader";
@@ -22,6 +23,7 @@ export function ProjectsSection() {
 			tags: t("projectsSection.bobby.tags", {
 				returnObjects: true,
 			}) as string[],
+			preview: BobbyPreview,
 		},
 		{
 			title: t("projectsSection.kanamaster.title"),

@@ -9,9 +9,11 @@ export interface NavbarSection {
 }
 
 export interface TimelineItemProps {
+	img?: string;
 	from: string;
 	to: string;
 	title: string;
 	subtitle: string;
 	description: string;
+	tags?: string[];
 }

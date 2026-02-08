@@ -1,5 +1,6 @@
 import type { IconType } from "react-icons";
-import type { TimelineItemProps } from "../../types/TimelineItem";
+import type { TimelineItemProps } from "../../types/types";
+import { Badge } from "./Badge";
 import { Card } from "./Card";
 
 interface TimelineProps {
@@ -8,28 +9,37 @@ interface TimelineProps {
 }
 
 interface TimelineItemExtraProps {
-	Icon?: IconType;
+	img?: string;
 	from: string;
 	to: string;
 	title: string;
 	subtitle: string;
 	description: string;
+	tags: string[];
 }
 
 function TimelineItem({
-	Icon,
+	img,
 	from,
 	to,
 	title,
 	subtitle,
 	description,
+	tags,
 }: TimelineItemExtraProps) {
 	return (
 		<Card>
 			<div className="flex items-start justify-between">
 				<div className="flex items-center gap-2">
-					{Icon ? <Icon /> : null}
-					<p className="font-bold">{title}</p>
+					{img ? (
+						<div className="flex h-12 w-12 items-center rounded-md">
+							<img alt="" src={img} />
+						</div>
+					) : null}
+					<div>
+						<p className="font-bold">{title}</p>
+						<p className="italic">{subtitle}</p>
+					</div>
 				</div>
 				<div className="rounded border border-border px-2 py-1 text-xs">
 					<p>
@@ -37,13 +47,20 @@ function TimelineItem({
 					</p>
 				</div>
 			</div>
-			<p className="italic">{subtitle}</p>
-			<p>{description}</p>
+			<p className="mt-4">{description}</p>
+
+			{tags.length !== 0 ? (
+				<div className="mt-5 flex gap-2">
+					{tags?.map((t) => (
+						<Badge key={t} title={t}></Badge>
+					))}
+				</div>
+			) : null}
 		</Card>
 	);
 }
 
-export function Timeline({ Icon, timelineItems }: TimelineProps) {
+export function Timeline({ timelineItems }: TimelineProps) {
 	return (
 		<section className="flex justify-center pt-20">
 			<div className="w-230">
@@ -67,12 +84,13 @@ export function Timeline({ Icon, timelineItems }: TimelineProps) {
 							</div>
 
 							<TimelineItem
-								Icon={Icon}
+								img={item.img}
 								from={item.from}
 								to={item.to}
 								title={item.title}
 								subtitle={item.subtitle}
 								description={item.description}
+								tags={item.tags ?? []}
 							/>
 						</li>
 					))}

@@ -59,7 +59,7 @@
 		"subheader": "Voici mes récents projets !",
 		"blackfridaySimulator": {
 			"title": "Simulation de Black Friday",
-			"description": "Simulation en Go visant à modéliser les mouvements de foule lors du Black Friday afin d'identifier l'agencement de magasin optimal permettant aux agents de parcourir l'ensemble de l'espace.\n\nLe système repose sur plusieurs types d'agents : des clients classiques, des clients égoïstes pouvant voler d'autres agents, et des agents de sécurité chargés de réduire le taux de vol dans leur champ de vision",
+			"description": "Simulation en Go visant à modéliser les mouvements de foule lors du Black Friday afin d'identifier l'agencement de magasin optimal permettant aux agents de parcourir l'ensemble de l'espace.\n\nLe système repose sur plusieurs types d'agents : des clients classiques, des clients égoïstes pouvant voler d'autres agents, et des agents de sécurité chargés de réduire le taux de vol dans leur champ de vision.",
 			"tags": [
 				"Système multi-agents",
 				"Go / Ebiten",
@@ -84,21 +84,38 @@
 			"to": "Maintenant",
 			"title": "Alternant ingénieur Cloud & Software",
 			"company": "SAP France",
-			"description": "Université de technologie de Compiègne"
+			"description": "Université de technologie de Compiègne",
+			"tags": [
+				"SAP BTP",
+				"Full-Stack",
+				"SAP CAP (CDS)",
+				"SpringBoot",
+				"React",
+				"UI5"
+			]
 		},
 		"internshipIZHO": {
 			"from": "Avril 2024",
 			"to": "Août 2024",
 			"title": "Stagiaire développeur Cloud Full-Stack",
 			"company": "IZHO",
-			"description": "IUT de Paris Cité"
+			"description": "Développement et optimisation de la plateforme web Capcore pour la gestion de données de consommation énergétique, avec implémentation d'importeurs multi-formats, création d'exporteurs automatisés, génération de rapports dynamiques et refonte de composants backend au sein d'une architecture micro-services sur AWS.",
+			"tags": [
+				"AWS",
+				"Serverless",
+				"Microservices",
+				"Node.js",
+				"TypeScript",
+				"Chart.js"
+			]
 		},
 		"internshipSIMPLOS": {
 			"from": "Avril 2023",
 			"to": "Juin 2023",
 			"title": "Stagiaire développeur web et mobile",
 			"company": "SIMPLOS",
-			"description": "IUT de Paris Cité"
+			"description": "Conception d'un plugin WordPress connectant les sites e-commerce à la plateforme SIMPLOS pour externaliser l'authentification et le stockage des données clients, avec récupération sécurisée des informations nécessaires à l'inscription ou à l'achat de produit.",
+			"tags": ["Cybersecurité", "Mobile", "Flutter", "WordPress", "PHP"]
 		}
 	},
 	"schoolSection": {
@@ -108,21 +125,21 @@
 			"to": "En cours",
 			"title": "Diplôme d'ingénieur — Génie informatique filière Infrastructure et Système d'information",
 			"school": "Université de Technologie de Compiègne",
-			"description": "Université de Technologie de Compiègne"
+			"description": "Formation d'ingénieur en informatique orientée infrastructures et systèmes d'information, avec apprentissage des principes des architectures distribuées, du cloud et de la conception de systèmes évolutifs, avec un intérêt pour les systèmes intelligents (systèmes multi-agents)."
 		},
 		"iut": {
 			"from": "2021",
 			"to": "2024",
 			"title": "BUT Informatique — Réalisation d'applications : conception, développement, validation",
 			"school": "IUT de Paris Cité",
-			"description": "IUT de Paris Cité"
+			"description": "Formation technique axée sur la conception et le développement d'applications maintenables. Réalisation de projets web et mobiles, mise en place d'architectures logicielles, et validation des applications via des tests unitaires et d'intégration, avec une forte approche pratique du cycle de développement."
 		},
 		"bac": {
 			"from": "2018",
 			"to": "2021",
 			"title": "Baccalauréat général — Spécialités Informatique et Mathématique",
 			"school": "Lycée Rosa Parks",
-			"description": "IUT de Paris Cité"
+			"description": "Premières expériences en développement logiciel et en algorithmique : création d'applications simples en Python, conception d'applications web, manipulation de bases de données relationnelles et apprentissage des structures de données fondamentales."
 		}
 	},
 	"contactSection": {

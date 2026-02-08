@@ -76,21 +76,38 @@
 			"to": "Now",
 			"title": "Cloud & Software Engineer Apprentice",
 			"company": "SAP France",
-			"description": "Université de technologie de Compiègne"
+			"description": "Université de technologie de Compiègne",
+			"tags": [
+				"SAP BTP",
+				"Full-Stack",
+				"SAP CAP (CDS)",
+				"SpringBoot",
+				"React",
+				"UI5"
+			]
 		},
 		"internshipIZHO": {
 			"from": "April 2024",
 			"to": "August 2024",
 			"title": "Developer Cloud Full-Stack Intern",
 			"company": "IZHO",
-			"description": "IUT de Paris Cité"
+			"description": "Development and optimization of Capcore, a web platform for energy consumption data management. Implemented multi-format data importers, built automated export pipelines, generated dynamic reporting features, and refactored backend components within an AWS-based microservices architecture.",
+			"tags": [
+				"AWS",
+				"Serverless",
+				"Microservices",
+				"Node.js",
+				"TypeScript",
+				"Chart.js"
+			]
 		},
 		"internshipSIMPLOS": {
 			"from": "April 2023",
 			"to": "June 2023",
 			"title": "Developer Web & Mobile Intern",
 			"company": "SIMPLOS",
-			"description": "IUT de Paris Cité"
+			"description": "Design and implementation of a WordPress plugin connecting e-commerce websites to the SIMPLOS platform to externalize customer authentication and data storage, with secure retrieval of required information for user registration and product purchases.",
+			"tags": ["Cybersecurity", "Mobile", "Flutter", "WordPress", "PHP"]
 		}
 	},
 	"schoolSection": {
@@ -98,23 +115,23 @@
 		"utc": {
 			"from": "2024",
 			"to": "Now",
-			"title": "Master's Degree in Computer Engineering — Specialization in Infrastructure and Information Systems",
+			"title": "Master's Degree in Computer Engineering — Infrastructure and Information Systems",
 			"school": "Université de Technologie de Compiègne",
-			"description": "Université de Technologie de Compiègne"
+			"description": "Engineering program in Computer Science, specializing in infrastructure and information systems. Covered distributed architectures, cloud computing, and the design of maintainable systems. Developed a particular interest in AI (multi-agent systems)."
 		},
 		"iut": {
 			"from": "2021",
 			"to": "2024",
-			"title": "Bachelor of Technology in Computer Science — Application Development: Design, Development, and Testing",
+			"title": "Bachelor of Technology in Computer Science — Design, Development, and Testing",
 			"school": "University Institute of Technology, Paris Cité (IUT Paris Cité)",
-			"description": "IUT de Paris Cité"
+			"description": "Program in Computer Science emphasizing the design and development of maintainable applications. Worked on web and mobile projects and designed application architectures. Validated applications through unit and integration testing. Gained hands-on experience throughout the software development lifecycle."
 		},
 		"bac": {
 			"from": "2018",
 			"to": "2021",
 			"title": "French Baccalaureate — Major in Computer Science and Mathematics",
 			"school": "Rosa Parks High School",
-			"description": "IUT de Paris Cité"
+			"description": "Early experience in software development and algorithms. Created simple Python applications and web applications with HTML/CSS/JS. Worked with relational databases and learned fundamental data structures."
 		}
 	},
 	"contactSection": {
