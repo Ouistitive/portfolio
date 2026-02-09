@@ -1,12 +1,14 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import "./styles/App.css";
-import { HomePage } from "./pages/Home.tsx";
+import { Routes, Route } from "react-router-dom";
+import { HomePage } from "./pages/Home";
+import { AboutMePage } from "./pages/AboutMe";
 
-import '../i18n';
+function App() {
+	return (
+		<Routes>
+			<Route path="/" element={<HomePage />} />
+			<Route path="/about" element={<AboutMePage />} />
+		</Routes>
+	);
+}
 
-createRoot(document.getElementById("root")!).render(
-	<StrictMode>
-		<HomePage />
-	</StrictMode>,
-);
+export default App;

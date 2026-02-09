@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import type { NavbarSection } from "../../types/types";
 import { LanguageOptions } from "./LanguageOptions";
 import { ThemeToggle } from "./ThemeToggle";
@@ -28,9 +29,11 @@ export function Navbar({ navbarSections }: NavbarProps) {
 		<nav
 			className={`fixed top-0 left-0 z-50 flex w-full items-center gap-4 p-5 transition-all duration-300 ${isScrolled ? "bg-bg/40 backdrop-blur-md" : "bg-transparent"}`}
 		>
-			<div className="flex items-center gap-4">
-				<div>ST</div>
-			</div>
+			<Link to="/about">
+				<div className="flex cursor-pointer items-center rounded-4xl border border-border px-2.5 py-2">
+					<div>ST</div>
+				</div>
+			</Link>
 
 			<div className="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 gap-8">
 				{navbarSections.map((section) => (
