@@ -46,7 +46,7 @@ export function SkillsSection() {
 	return (
 		<section className="mx-7 flex flex-col gap-15">
 			<SubHeader title={t("skillsSection.subheader")} />
-			<div className="gap-8 md:mx-60 md:grid md:grid-cols-3">
+			<div className="flex flex-col gap-8 md:mx-60 md:grid md:grid-cols-3">
 				{skills.map((skill) => (
 					<SkillCard
 						key={skill.key}
