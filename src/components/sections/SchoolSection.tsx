@@ -26,6 +26,7 @@ export function SchoolSection() {
 			description: t("schoolSection.iut.description"),
 		},
 		{
+			Icon: IoSchool,
 			from: t("schoolSection.bac.from"),
 			to: t("schoolSection.bac.to"),
 			title: t("schoolSection.bac.title"),
@@ -37,7 +38,7 @@ export function SchoolSection() {
 	return (
 		<div className="flex flex-col items-center">
 			<SubHeader title={t("schoolSection.subheader")} />
-			<Timeline Icon={IoSchool} timelineItems={schoolHistory} />
+			<Timeline timelineItems={schoolHistory} />
 		</div>
 	);
 }

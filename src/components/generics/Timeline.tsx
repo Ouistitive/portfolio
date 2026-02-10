@@ -4,12 +4,12 @@ import { Badge } from "./Badge";
 import { Card } from "./Card";
 
 interface TimelineProps {
-	Icon?: IconType;
 	timelineItems: TimelineItemProps[];
 }
 
 interface TimelineItemExtraProps {
 	img?: string;
+	Icon?: IconType;
 	from: string;
 	to: string;
 	title: string;
@@ -20,6 +20,7 @@ interface TimelineItemExtraProps {
 
 function TimelineItem({
 	img,
+	Icon,
 	from,
 	to,
 	title,
@@ -36,6 +37,7 @@ function TimelineItem({
 							<img alt="" src={img} />
 						</div>
 					) : null}
+					{Icon ? <Icon /> : null}
 					<div>
 						<p className="font-bold">{title}</p>
 						<p className="italic">{subtitle}</p>
@@ -85,6 +87,7 @@ export function Timeline({ timelineItems }: TimelineProps) {
 
 							<TimelineItem
 								img={item.img}
+								Icon={item.Icon}
 								from={item.from}
 								to={item.to}
 								title={item.title}
