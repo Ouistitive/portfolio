@@ -25,11 +25,11 @@ export function ProjectCard({
 				<p className="font-bold text-2xl">{title}</p>
 				<hr className="my-2 text-border" />
 				{preview ? (
-					<div className="md-5 flex h-75 justify-center rounded-bg">
+					<div className="md-5 flex h-40 justify-center rounded-bg sm:h-56 md:h-64 lg:h-75">
 						<ImageFullscreen
 							src={preview}
 							alt={"Image"}
-							className="flex h-70 items-center justify-center overflow-hidden rounded bg-bg-surface"
+							className="flex h-40 items-center justify-center overflow-hidden rounded bg-bg-surface sm:h-56 md:h-64 lg:h-75"
 						/>
 					</div>
 				) : null}

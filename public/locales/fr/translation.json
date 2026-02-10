@@ -67,7 +67,7 @@
 			]
 		},
 		"bobby": {
-			"title": "Gestion des inventaires des associations de l'UTC",
+			"title": "Gestion des inventaires des associations",
 			"description": "Application web de gestion des objets des associations de l'UTC en Laravel et React. L'application permet aux associations de visualiser leur inventaire et faire des demandes d'emprunts d'objets à d'autres associations.",
 			"tags": ["PHP / Laravel", "React / Typescript"]
 		},
