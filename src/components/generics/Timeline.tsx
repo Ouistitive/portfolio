@@ -37,13 +37,17 @@ function TimelineItem({
 							<img alt="" src={img} />
 						</div>
 					) : null}
-					{Icon ? <Icon /> : null}
+					{Icon ? (
+						<div className="rounded-md border p-3">
+							<Icon size={20} />
+						</div>
+					) : null}
 					<div>
 						<p className="font-bold">{title}</p>
 						<p className="italic">{subtitle}</p>
 					</div>
 				</div>
-				<div className="w-fit rounded border border-border px-2 py-1 text-xs">
+				<div className="w-fit shrink-0 rounded border border-border px-2 py-1 text-xs">
 					<p>
 						{from} - {to}
 					</p>
