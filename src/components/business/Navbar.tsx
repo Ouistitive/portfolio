@@ -27,7 +27,7 @@ export function Navbar({ navbarSections }: NavbarProps) {
 
 	return (
 		<nav
-			className={`fixed top-0 left-0 z-50 flex w-full items-center gap-4 p-5 transition-all duration-300 ${isScrolled ? "bg-bg/40 backdrop-blur-md" : "bg-transparent"}`}
+			className={`hidden md:flex fixed top-0 left-0 z-50 flex w-full items-center gap-4 p-5 transition-all duration-300 ${isScrolled ? "bg-bg/40 backdrop-blur-md" : "bg-transparent"}`}
 		>
 			<Link to="/about">
 				<div className="flex cursor-pointer items-center rounded-4xl border border-border px-2.5 py-2">
