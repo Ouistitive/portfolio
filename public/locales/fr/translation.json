@@ -15,7 +15,7 @@
 		"subheader": "Mes principales compétences",
 		"backend": {
 			"title": "Backend",
-			"description": "Conception d'API et implémentation de la logique métier",
+			"description": "Conception d'API et implémentation de la logique métier.",
 			"tags": [
 				"Node.JS",
 				"Java",
