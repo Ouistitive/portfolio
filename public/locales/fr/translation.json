@@ -4,7 +4,9 @@
 		"projects": "Projets",
 		"experience": "Expériences",
 		"school": "Formations",
-		"contact": "Contact"
+		"contact": "Contact",
+		"learnings": "Mes apprentissages",
+		"hobbies": "Mes hobbies"
 	},
 	"introductionSection": {
 		"welcome": "Salut, je suis Steven Tea !",
@@ -148,6 +150,25 @@
 			"github": "Mes futurs projets",
 			"linkedin": "Mes prochaines expériences",
 			"email": "Discutons !"
+		}
+	},
+	"aboutMeSection": {
+		"welcome": "Plus à propos de moi ?",
+		"description": "coucou"
+	},
+	"learningsSection": {
+		"subheader": "Mes apprentissages en cours",
+		"learning1": {
+			"title": "Certification AWS",
+			"description": ""
+		},
+		"learning2": {
+			"title": "Apprentissage par renforcement",
+			"description": ""
+		},
+		"learning3": {
+			"title": "Langue japonaise",
+			"description": ""
 		}
 	},
 	"buttons": {

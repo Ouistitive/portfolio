@@ -4,7 +4,9 @@
 		"projects": "Projects",
 		"experience": "Experiences",
 		"school": "School",
-		"contact": "Contact"
+		"contact": "Contact",
+		"learnings": "My learnings",
+		"hobbies": "My hobbies"
 	},
 	"introductionSection": {
 		"welcome": "Hi, I'm Steven Tea!",
@@ -140,6 +142,25 @@
 			"github": "My future projects",
 			"linkedin": "My next experiences",
 			"email": "Let's discuss!"
+		}
+	},
+	"aboutMeSection": {
+		"welcome": "More about me?",
+		"description": "coucou"
+	},
+	"learningsSection": {
+		"subheader": "My latest learnings",
+		"learning1": {
+			"title": "AWS certification",
+			"description": ""
+		},
+		"learning2": {
+			"title": "Reinforcement learning",
+			"description": ""
+		},
+		"learning3": {
+			"title": "Japanese language",
+			"description": ""
 		}
 	},
 	"buttons": {

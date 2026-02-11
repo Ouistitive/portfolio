@@ -1,17 +1,37 @@
-import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { Navbar } from "../components/business/Navbar";
+import { Title } from "../components/generics/Title";
+import { AboutMeSection } from "../components/sections/AboutMeSection";
+import { LearningsSection } from "../components/sections/LearningsSection";
+import { ProjectsSection } from "../components/sections/ProjectsSection";
+import type { NavbarSection } from "../types/types";
 
 export function AboutMePage() {
+	const { t } = useTranslation();
+	const navbarSections: NavbarSection[] = [
+		{
+			title: t("navbar.learnings"),
+			link: "#learnings",
+			Section: LearningsSection,
+		},
+		{ title: t("navbar.hobbies"), link: "#hobbies", Section: ProjectsSection },
+	];
+
 	return (
-		<div className="relative flex h-screen flex-col items-center justify-center gap-7 bg-bg">
-			<p className="text-center text-3xl md:text-7xl">Coming soon...</p>
-			<Link to="/">
-				<button
-					type="button"
-					className="cursor-pointer rounded-2xl border border-border bg-text p-3 text-center font-bold text-2xl text-text-subtitle md:text-2xl"
+		<div className="bg-bg text-text">
+			<Navbar linkProfile="/" navbarSections={navbarSections} />
+			<AboutMeSection />
+
+			{navbarSections.map((section, idx) => (
+				<div
+					key={section.link}
+					id={section.link}
+					className={`pt-10 pb-19 ${idx % 2 === 0 ? "bg-bg" : "bg-bg-surface"}`}
 				>
-					Return to main page
-				</button>
-			</Link>
+					<Title key={section.link} title={section.title} />
+					{section.Section ? <section.Section /> : null}
+				</div>
+			))}
 		</div>
 	);
 }
