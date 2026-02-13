@@ -152,8 +152,8 @@
 	"contactSection": {
 		"subheader": "Restons en contact !",
 		"contacts": {
-			"github": "Mes futurs projets",
-			"linkedin": "Mes prochaines expériences",
+			"github": "Mes projets",
+			"linkedin": "Mes expériences",
 			"email": "Discutons !"
 		}
 	},
@@ -195,6 +195,8 @@
 	},
 	"buttons": {
 		"github": "Voir sur Github",
-		"seeMore": "Voir plus"
+		"seeMore": "Voir plus",
+		"aboutMe": "À propos de moi",
+		"myCareer": "Mon parcours"
 	}
 }

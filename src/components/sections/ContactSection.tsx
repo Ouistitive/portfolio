@@ -1,8 +1,9 @@
 import { useTranslation } from "react-i18next";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaUser } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { constants } from "../../utils/constants";
 import { ContactCard } from "../business/ContactCard";
+import { CTAButton } from "../business/CTAButton";
 import { SubHeader } from "../generics/SubHeader";
 
 export function ContactSection() {
@@ -11,7 +12,7 @@ export function ContactSection() {
 	return (
 		<section className="flex flex-col items-center gap-20">
 			<SubHeader title={t("contactSection.subheader")} />
-			<div className="flex flex-col justify-center gap-5 md:w-full md:flex-row md:gap-15">
+			<div className="flex flex-col items-center gap-5 md:flex-row md:items-stretch md:justify-center md:gap-10">
 				<ContactCard
 					Icon={FaGithub}
 					text={t("contactSection.contacts.github")}
@@ -28,6 +29,8 @@ export function ContactSection() {
 					link={`mailto:${constants.EMAIL}`}
 				/>
 			</div>
+
+			<CTAButton Icon={FaUser} link={"/about"} text={t("buttons.aboutMe")} />
 		</section>
 	);
 }

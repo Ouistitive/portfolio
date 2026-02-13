@@ -1,4 +1,6 @@
 import { useTranslation } from "react-i18next";
+import { FaUser } from "react-icons/fa";
+import { CTAButton } from "../business/CTAButton";
 import { ProjectCard, type ProjectCardProps } from "../business/ProjectCard";
 import { SubHeader } from "../generics/SubHeader";
 
@@ -41,6 +43,8 @@ export function HobbiesSection() {
 					return <ProjectCard key={key} {...rest} />;
 				})}
 			</aside>
+
+			<CTAButton Icon={FaUser} link={"/"} text={t("buttons.myCareer")} />
 		</section>
 	);
 }
