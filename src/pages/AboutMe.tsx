@@ -2,8 +2,8 @@ import { useTranslation } from "react-i18next";
 import { Navbar } from "../components/business/Navbar";
 import { Title } from "../components/generics/Title";
 import { AboutMeSection } from "../components/sections/AboutMeSection";
+import { HobbiesSection } from "../components/sections/HobbiesSection";
 import { LearningsSection } from "../components/sections/LearningsSection";
-import { ProjectsSection } from "../components/sections/ProjectsSection";
 import type { NavbarSection } from "../types/types";
 
 export function AboutMePage() {
@@ -14,7 +14,7 @@ export function AboutMePage() {
 			link: "#learnings",
 			Section: LearningsSection,
 		},
-		{ title: t("navbar.hobbies"), link: "#hobbies", Section: ProjectsSection },
+		{ title: t("navbar.hobbies"), link: "#hobbies", Section: HobbiesSection },
 	];
 
 	return (

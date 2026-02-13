@@ -1,3 +1,4 @@
+import type { IconType } from "react-icons";
 import { Badge } from "../generics/Badge";
 import { Card } from "../generics/Card";
 import ImageFullscreen from "../generics/ImageFullscreen";
@@ -7,12 +8,14 @@ export interface ProjectCardProps {
 	title: string;
 	description: string;
 	tags: string[];
+	Icon?: IconType;
 	preview?: string;
 
 	viewGithub?: string;
 }
 
 export function ProjectCard({
+	Icon,
 	title,
 	description,
 	tags,
@@ -22,7 +25,10 @@ export function ProjectCard({
 	return (
 		<Card className="flex h-full flex-col gap-10">
 			<section>
-				<p className="font-bold text-2xl">{title}</p>
+				<div className="flex items-center gap-4">
+					{Icon ? <Icon size={45} /> : null}
+					<p className="font-bold text-2xl">{title}</p>
+				</div>
 				<hr className="my-2 text-border" />
 				{preview ? (
 					<div className="md-5 flex h-40 justify-center rounded-bg sm:h-56 md:h-64 lg:h-75">

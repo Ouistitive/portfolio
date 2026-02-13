@@ -159,16 +159,16 @@
 	"learningsSection": {
 		"subheader": "Mes apprentissages en cours",
 		"learning1": {
-			"title": "Certification AWS",
-			"description": ""
+			"title": "AWS Certified Cloud Practitionner",
+			"description": "Actuellement, je suis les cours de AWS (CLF-C02) dans le but d'apprendre et comprendre les meilleurs pratiques et optimisation de coût pour les architectures cloud sur AWS."
 		},
 		"learning2": {
 			"title": "Apprentissage par renforcement",
-			"description": ""
+			"description": "Je me forme au reinforcement learning via les cours de David Silver pour comprendre comment des agents intelligents apprennent à prendre des décisions optimales, dans le but de faire un système multi-agents intelligent de drônes pour la livraison de colis."
 		},
 		"learning3": {
 			"title": "Langue japonaise",
-			"description": ""
+			"description": "J'apprends actuellement la langue japonaise à l’UTC ainsi qu’en autonomie afin de développer mes compétences linguistiques et ma compréhension de la culture japonaise."
 		}
 	},
 	"buttons": {

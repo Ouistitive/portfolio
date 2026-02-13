@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { FaAws, FaBrain, FaLanguage } from "react-icons/fa";
-import { SkillCard, type SkillCardProps } from "../business/SkillCard";
+import { ProjectCard } from "../business/ProjectCard";
+import type { SkillCardProps } from "../business/SkillCard";
 import { SubHeader } from "../generics/SubHeader";
 
 export function LearningsSection() {
@@ -34,7 +35,7 @@ export function LearningsSection() {
 			<SubHeader title={t("learningsSection.subheader")} />
 			<div className="flex flex-col gap-8 md:mx-60 md:grid md:grid-cols-3">
 				{skills.map((skill) => (
-					<SkillCard
+					<ProjectCard
 						key={skill.key}
 						Icon={skill.Icon}
 						title={skill.title}
