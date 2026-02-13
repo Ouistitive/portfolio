@@ -181,6 +181,7 @@
 		"subheader": "What I like to do!"
 	},
 	"buttons": {
-		"github": "View on Github"
+		"github": "View on Github",
+		"seeMore": "See more"
 	}
 }

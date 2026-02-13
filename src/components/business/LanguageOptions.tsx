@@ -6,7 +6,7 @@ import { constants } from "../../utils/constants";
 
 export function LanguageOptions() {
 	const [currentLanguage, setCurrentLanguage] = useState(
-		constants.DEFAULT_LANGUAGE,
+		i18next.language.toUpperCase() || constants.DEFAULT_LANGUAGE,
 	);
 	const [open, setOpen] = useState(false);
 	const ref = useRef<HTMLDivElement>(null);

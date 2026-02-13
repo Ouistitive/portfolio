@@ -189,6 +189,7 @@
 		"subheader": "Ce que j'aime !"
 	},
 	"buttons": {
-		"github": "Voir sur Github"
+		"github": "Voir sur Github",
+		"seeMore": "Voir plus"
 	}
 }
