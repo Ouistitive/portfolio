@@ -13,7 +13,7 @@ export function IntroductionSection() {
 			<p className="text-center font-bold text-2xl text-text-subtitle md:text-4xl">
 				{t("introductionSection.profession")}
 			</p>
-			<p className="p-5 text-center text-text-subtitle text-xl">
+			<p className="p-5 text-center text-text-subtitle text-xl md:px-120">
 				{t("introductionSection.description")}
 			</p>
 
