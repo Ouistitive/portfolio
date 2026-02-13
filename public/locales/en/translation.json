@@ -62,8 +62,13 @@
 		},
 		"bobby": {
 			"title": "Bobby: Inventory management for UTC Student Organizations",
-			"description": "Bobby is a web application in Laravel and React to manage UTC student organizations' equipments. This application allows student organizations to display their inventory and create borrow requests from other associations.",
-			"tags": ["PHP / Laravel", "React / Typescript"]
+			"description": "Bobby is a web application in Laravel and React to manage UTC student organizations' equipments. This application allows student organizations to display their inventory and create borrow requests from other associations.\n\nWe put a security layer in order to protect our web application from main security breaches listed in OWASP website (code injection, brute-force, access control...).",
+			"tags": [
+				"PHP / Laravel",
+				"React / Typescript",
+				"IT Security",
+				"Access control"
+			]
 		},
 		"kanamaster": {
 			"title": "KanaMaster: Mobile application quiz",
