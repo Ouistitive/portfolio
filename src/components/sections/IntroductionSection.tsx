@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { FaArrowDown } from "react-icons/fa";
+import { SeeMoreButton } from "../business/SeeMoreButton";
 
 export function IntroductionSection() {
 	const { t } = useTranslation();
@@ -12,10 +13,11 @@ export function IntroductionSection() {
 			<p className="text-center font-bold text-2xl text-text-subtitle md:text-4xl">
 				{t("introductionSection.profession")}
 			</p>
-			<p className="text-text-subtitle text-xl">
+			<p className="p-5 text-center text-text-subtitle text-xl">
 				{t("introductionSection.description")}
 			</p>
 
+			<SeeMoreButton className="mt-5" anchorNav="#skills" />
 			<span className="absolute bottom-6 animate-bounce text-3xl">
 				<FaArrowDown />
 			</span>
