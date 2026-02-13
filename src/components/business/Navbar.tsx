@@ -5,10 +5,11 @@ import { LanguageOptions } from "./LanguageOptions";
 import { ThemeToggle } from "./ThemeToggle";
 
 export interface NavbarProps {
+	linkProfile: string;
 	navbarSections: NavbarSection[];
 }
 
-export function Navbar({ navbarSections }: NavbarProps) {
+export function Navbar({ linkProfile, navbarSections }: NavbarProps) {
 	const [isScrolled, setIsScrolled] = useState(false);
 
 	const handleClick = (id: string) => {
@@ -29,7 +30,7 @@ export function Navbar({ navbarSections }: NavbarProps) {
 		<nav
 			className={`fixed top-0 left-0 z-50 hidden w-full items-center gap-4 p-5 transition-all duration-300 md:flex ${isScrolled ? "bg-bg/40 backdrop-blur-md" : "bg-transparent"}`}
 		>
-			<Link to="/about">
+			<Link to={linkProfile}>
 				<div className="flex cursor-pointer items-center rounded-4xl border border-border px-2.5 py-2">
 					<div>ST</div>
 				</div>

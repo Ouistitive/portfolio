@@ -9,6 +9,7 @@ export function ProjectsSection() {
 	const { t } = useTranslation();
 	const projects: ProjectCardProps[] = [
 		{
+			key: "project1",
 			title: t("projectsSection.blackfridaySimulator.title"),
 			description: t("projectsSection.blackfridaySimulator.description"),
 			tags: t("projectsSection.blackfridaySimulator.tags", {
@@ -18,6 +19,7 @@ export function ProjectsSection() {
 			viewGithub: constants.BLACK_FRIDAY_LINK,
 		},
 		{
+			key: "project2",
 			title: t("projectsSection.bobby.title"),
 			description: t("projectsSection.bobby.description"),
 			tags: t("projectsSection.bobby.tags", {
@@ -26,6 +28,7 @@ export function ProjectsSection() {
 			preview: BobbyPreview,
 		},
 		{
+			key: "project3",
 			title: t("projectsSection.kanamaster.title"),
 			description: t("projectsSection.kanamaster.description"),
 			tags: t("projectsSection.kanamaster.tags", {
@@ -40,7 +43,15 @@ export function ProjectsSection() {
 			<SubHeader title={t("projectsSection.subheader")} />
 			<aside className="mx-7 grid gap-8 md:mx-60 md:grid-cols-2">
 				{projects.map((project) => (
-					<ProjectCard key={project.title} {...project} />
+					<ProjectCard
+						key={project.key}
+						Icon={project.Icon}
+						preview={project.preview}
+						title={project.title}
+						description={project.description}
+						tags={project.tags}
+						viewGithub={project.viewGithub}
+					/>
 				))}
 			</aside>
 		</section>

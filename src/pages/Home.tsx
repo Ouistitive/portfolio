@@ -29,7 +29,7 @@ export function HomePage() {
 
 	return (
 		<div className="bg-bg text-text">
-			<Navbar navbarSections={navbarSections} />
+			<Navbar linkProfile="/about" navbarSections={navbarSections} />
 			<IntroductionSection />
 
 			{navbarSections.map((section, idx) => (
