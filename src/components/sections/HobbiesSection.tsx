@@ -34,7 +34,7 @@ export function HobbiesSection() {
 
 	return (
 		<section className="flex flex-col items-center gap-15">
-			<SubHeader title={t("projectsSection.subheader")} />
+			<SubHeader title={t("hobbiesSection.subheader")} />
 			<aside className="mx-7 grid gap-8 md:mx-60 md:grid-cols-2">
 				{projects.map((project) => (
 					<ProjectCard key={project.title} {...project} />

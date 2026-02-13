@@ -11,7 +11,7 @@
 	"introductionSection": {
 		"welcome": "Hi, I'm Steven Tea!",
 		"profession": "Cloud & Software engineer",
-		"description": "coucou"
+		"description": "Passionate about creation and innovation, I enjoy experimenting, building and finding original solutions for technical challenges."
 	},
 	"skillsSection": {
 		"subheader": "My mains skills",
@@ -146,22 +146,39 @@
 	},
 	"aboutMeSection": {
 		"welcome": "More about me?",
-		"description": "coucou"
+		"description": "I enjoy discovering new technologies, experimenting with ideas, and building projects just for the fun of learning and creating something cool along the way!"
 	},
 	"learningsSection": {
-		"subheader": "My latest learnings",
+		"subheader": "To satisfy my curiosity!",
 		"learning1": {
-			"title": "AWS certification",
-			"description": ""
+			"title": "AWS Certified Cloud Practitioner",
+			"description": "I am currently taking AWS Certified Cloud Practitioner courses (CLF-C02) to learn and understand the best practices and cost optimization strategies for AWS cloud architectures.",
+			"tags": [
+				"AWS",
+				"Cloud",
+				"Cloud fundamentals",
+				"Cloud computing",
+				"Cost optimization"
+			]
 		},
 		"learning2": {
-			"title": "Reinforcement learning",
-			"description": ""
+			"title": "Reinforcement Learning",
+			"description": "I am learning reinforcement learning through David Silver's course to understand how to design agents capable of making optimal decisions, with the goal of developing an intelligent multi-agent system for package delivery.",
+			"tags": [
+				"Distributed systems",
+				"Machine Learning",
+				"Decision-making agents",
+				"Multi-agent Systems"
+			]
 		},
 		"learning3": {
 			"title": "Japanese language",
-			"description": ""
+			"description": "I am currently learning Japanese at Université de technologie de Compiègne (UTC) as well as independently to improve my language skills and deepen my understanding of Japanese culture, with the goal of reaching an A2 level.",
+			"tags": ["Language", "Japanese", "Communication"]
 		}
+	},
+	"hobbiesSection": {
+		"subheader": "What I like to do!"
 	},
 	"buttons": {
 		"github": "View on Github"

@@ -11,7 +11,7 @@
 	"introductionSection": {
 		"welcome": "Salut, je suis Steven Tea !",
 		"profession": "Ingénieur Cloud & Logiciel",
-		"description": "coucou"
+		"description": "Passionné par l'innovation et la création, je prends plaisir à tester, bricoler et trouver des solutions originales à des problèmes techniques."
 	},
 	"skillsSection": {
 		"subheader": "Mes principales compétences",
@@ -154,22 +154,39 @@
 	},
 	"aboutMeSection": {
 		"welcome": "Plus à propos de moi ?",
-		"description": "coucou"
+		"description": "J'aime découvrir de nouvelles technologies, tester mes idées et développer des projets pour m'amuser !"
 	},
 	"learningsSection": {
-		"subheader": "Mes apprentissages en cours",
+		"subheader": "Pour satisfaire ma curiosité !",
 		"learning1": {
-			"title": "AWS Certified Cloud Practitionner",
-			"description": "Actuellement, je suis les cours de AWS (CLF-C02) dans le but d'apprendre et comprendre les meilleurs pratiques et optimisation de coût pour les architectures cloud sur AWS."
+			"title": "AWS Certified Cloud Practitioner",
+			"description": "Actuellement, je suis les cours de AWS (CLF-C02) dans le but d'apprendre et comprendre les meilleurs pratiques et optimisation de coût pour les architectures cloud sur AWS.",
+			"tags": [
+				"AWS",
+				"Cloud",
+				"Fondamentaux cloud",
+				"Cloud computing",
+				"Optimisation des coûts"
+			]
 		},
 		"learning2": {
 			"title": "Apprentissage par renforcement",
-			"description": "Je me forme au reinforcement learning via les cours de David Silver pour comprendre comment des agents intelligents apprennent à prendre des décisions optimales, dans le but de faire un système multi-agents intelligent de drônes pour la livraison de colis."
+			"description": "Je me forme au reinforcement learning via les cours de David Silver pour comprendre comment des agents intelligents apprennent à prendre des décisions optimales, dans le but de faire un système multi-agents intelligent de drônes pour la livraison de colis.",
+			"tags": [
+				"Système distribué",
+				"Machine Learning",
+				"Agents de prise de décision",
+				"Système multi-agents"
+			]
 		},
 		"learning3": {
 			"title": "Langue japonaise",
-			"description": "J'apprends actuellement la langue japonaise à l’UTC ainsi qu’en autonomie afin de développer mes compétences linguistiques et ma compréhension de la culture japonaise."
+			"description": "J'apprends actuellement la langue japonaise à l'UTC ainsi qu'en autonomie afin de développer mes compétences linguistiques et ma compréhension de la culture japonaise afin d'atteindre le niveau A2.",
+			"tags": ["Langue", "Japonais", "Communication"]
 		}
+	},
+	"hobbiesSection": {
+		"subheader": "Ce que j'aime !"
 	},
 	"buttons": {
 		"github": "Voir sur Github"

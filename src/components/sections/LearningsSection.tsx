@@ -1,32 +1,37 @@
 import { useTranslation } from "react-i18next";
 import { FaAws, FaBrain, FaLanguage } from "react-icons/fa";
-import { ProjectCard } from "../business/ProjectCard";
-import type { SkillCardProps } from "../business/SkillCard";
+import { ProjectCard, type ProjectCardProps } from "../business/ProjectCard";
 import { SubHeader } from "../generics/SubHeader";
 
 export function LearningsSection() {
 	const { t } = useTranslation();
-	const skills: SkillCardProps[] = [
+	const skills: ProjectCardProps[] = [
 		{
 			Icon: FaAws,
 			key: "backend",
 			title: t("learningsSection.learning1.title"),
 			description: t("learningsSection.learning1.description"),
-			tags: [],
+			tags: t("learningsSection.learning1.tags", {
+				returnObjects: true,
+			}) as string[],
 		},
 		{
 			Icon: FaBrain,
 			key: "frontend",
 			title: t("learningsSection.learning2.title"),
 			description: t("learningsSection.learning2.description"),
-			tags: [],
+			tags: t("learningsSection.learning2.tags", {
+				returnObjects: true,
+			}) as string[],
 		},
 		{
 			Icon: FaLanguage,
 			key: "architecture",
 			title: t("learningsSection.learning3.title"),
 			description: t("learningsSection.learning3.description"),
-			tags: [],
+			tags: t("learningsSection.learning3.tags", {
+				returnObjects: true,
+			}) as string[],
 		},
 	];
 

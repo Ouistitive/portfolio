@@ -5,6 +5,7 @@ import ImageFullscreen from "../generics/ImageFullscreen";
 import { GithubBadge } from "./GithubBadge";
 
 export interface ProjectCardProps {
+	key: string;
 	title: string;
 	description: string;
 	tags: string[];
@@ -39,11 +40,13 @@ export function ProjectCard({
 						/>
 					</div>
 				) : null}
-				<p className="whitespace-pre-line text-md">{description}</p>
+				<p className="whitespace-pre-line text-justify text-md">
+					{description}
+				</p>
 			</section>
 
-			<footer className="mt-auto flex flex-col flex-wrap gap-3">
-				<div className="flex gap-2">
+			<footer className="mt-auto flex flex-col gap-3">
+				<div className="flex flex-wrap gap-2">
 					{tags.map((tag) => (
 						<Badge key={tag} title={tag} />
 					))}
