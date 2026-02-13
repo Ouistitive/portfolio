@@ -11,7 +11,7 @@ export function AboutMeSection() {
 				{t("aboutMeSection.welcome")}
 			</p>
 
-			<p className="p-5 text-center text-text-subtitle text-xl">
+			<p className="p-5 text-center text-text-subtitle text-xl md:px-120">
 				{t("aboutMeSection.description")}
 			</p>
 
