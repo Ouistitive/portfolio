@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { FaArrowDown } from "react-icons/fa";
-import { SeeMoreButton } from "../business/SeeMoreButton";
+import { CTAButton } from "../business/CTAButton";
 
 export function IntroductionSection() {
 	const { t } = useTranslation();
@@ -17,7 +17,12 @@ export function IntroductionSection() {
 				{t("introductionSection.description")}
 			</p>
 
-			<SeeMoreButton className="mt-5" anchorNav="#skills" />
+			<CTAButton
+				Icon={FaArrowDown}
+				className="mt-5"
+				anchorNav="#skills"
+				text={t("buttons.seeMore")}
+			/>
 			<span className="absolute bottom-6 animate-bounce text-3xl">
 				<FaArrowDown />
 			</span>
