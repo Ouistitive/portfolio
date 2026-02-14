@@ -70,7 +70,7 @@
 		},
 		"bobby": {
 			"title": "Gestion des inventaires des associations",
-			"description": "Application web de gestion des objets des associations de l'UTC en Laravel et React. L'application permet aux associations de visualiser leur inventaire et faire des demandes d'emprunts d'objets à d'autres associations.\n\nNous avons mis en place des sécurités dans le but de protéger notre application web, des principales failles de sécurité répertoriées sur OWASP (injection de code, brute force, contrôles des accès...).",
+			"description": "Application web de gestion des objets des associations de l'UTC en Laravel et React. L'application permet aux associations de visualiser leur inventaire et faire des demandes d'emprunts d'objets à d'autres associations. Intégration avec d'autres services de l'UTC pour assurer l'authentification et la synchronisation des données.\n\nNous avons mis en place des sécurités dans le but de protéger notre application web, des principales failles de sécurité (injection de code, contrôles des accès et permissions...).",
 			"tags": [
 				"PHP / Laravel",
 				"React / Typescript",
