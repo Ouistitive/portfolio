@@ -91,14 +91,16 @@
 			"to": "Maintenant",
 			"title": "Alternant ingénieur Cloud & Software",
 			"company": "SAP France",
-			"description": "Conception et développement Full-Stack d'une plateforme cloud sur SAP BTP permettant la gestion des accès et des permissions sur des datalakes Azure et SAP HANA, afin de fournir aux équipes AI des environnements data sécurisés, avec backend SAP CAP/CDS et interfaces React utilisant UI5 Web Components.",
+			"description": "Conception et développement Full-Stack d'une plateforme cloud sur SAP BTP permettant la gestion des accès et des permissions sur des datalakes Azure et SAP HANA, afin de fournir aux équipes AI des environnements data sécurisés, avec backend SAP CAP/CDS et interfaces React utilisant UI5 Web Components, en méthode Agile SAFe et mentorat de stagiaires et externes.",
 			"tags": [
 				"SAP BTP",
 				"Full-Stack",
 				"SAP CAP (CDS)",
 				"SpringBoot",
 				"React",
-				"UI5"
+				"UI5",
+				"Agile SAFe",
+				"Mentorat"
 			]
 		},
 		"internshipIZHO": {
@@ -191,7 +193,40 @@
 		}
 	},
 	"hobbiesSection": {
-		"subheader": "Ce que j'aime !"
+		"subheader": "Ce que j'aime !",
+		"hobby1": {
+			"title": "Raspberry Pi home server",
+			"description": "J'utilise une Raspberry Pi 5 pour héberger des applications web (NextCloud, Portainer, ...) ainsi que mes propres applications développées, ce qui me permet de centraliser mes services numériques tout en pratiquant l'administration système et le déploiement d'applications.",
+			"tags": [
+				"Home server",
+				"Administration système",
+				"Services web",
+				"Déploiement d'applications",
+				"Automatisation"
+			]
+		},
+		"hobby2": {
+			"title": "Jeux vidéo narratifs",
+			"description": "Je suis passionné par les jeux vidéo narratifs tels que NieR: Automata ou la série Persona, pour leur univers immersif ainsi que les histoires et personnages qui m'ont grandement marqué.",
+			"tags": [
+				"Jeux vidéo",
+				"Immersion",
+				"Storytelling",
+				"Personnages",
+				"Design narratif"
+			]
+		},
+		"hobby3": {
+			"title": "Dessin",
+			"description": "Débutant en dessin, j'aime l'utiliser comme moyen d'expression personnelle et d'exploration visuelle, pour représenter des personnages que j'apprécie avec des poses qui reflètent leur personnalité, souvent inspiré par la culture japonaise.",
+			"tags": [
+				"Dessin",
+				"Créativité",
+				"Art visuel",
+				"Illustration",
+				"Exploration artistique"
+			]
+		}
 	},
 	"buttons": {
 		"github": "Voir sur Github",

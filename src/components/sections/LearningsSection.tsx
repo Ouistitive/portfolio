@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next";
 import { FaAws, FaBrain, FaLanguage } from "react-icons/fa";
-import { ProjectCard, type ProjectCardProps } from "../business/ProjectCard";
+import { SkillCard, type SkillCardProps } from "../business/SkillCard";
 import { SubHeader } from "../generics/SubHeader";
 
 export function LearningsSection() {
 	const { t } = useTranslation();
-	const skills: ProjectCardProps[] = [
+	const skills: SkillCardProps[] = [
 		{
 			Icon: FaAws,
 			key: "backend",
@@ -38,9 +38,9 @@ export function LearningsSection() {
 	return (
 		<section className="mx-7 flex flex-col gap-15">
 			<SubHeader title={t("learningsSection.subheader")} />
-			<div className="flex flex-col gap-8 md:mx-60 md:grid md:grid-cols-3">
+			<div className="flex flex-col gap-8 md:mx-60 md:grid md:grid-cols-2">
 				{skills.map((skill) => (
-					<ProjectCard
+					<SkillCard
 						key={skill.key}
 						Icon={skill.Icon}
 						title={skill.title}

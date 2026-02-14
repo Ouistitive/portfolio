@@ -27,7 +27,7 @@ export function Navbar({ linkProfile, navbarSections }: NavbarProps) {
 			className={`fixed top-0 left-0 z-50 hidden w-full items-center gap-4 p-5 transition-all duration-300 md:flex ${isScrolled ? "bg-bg/40 backdrop-blur-md" : "bg-transparent"}`}
 		>
 			<Link to={linkProfile}>
-				<div className="cursor-pointer rounded-4xl border border-border px-2.5 py-2">
+				<div className="cursor-pointer rounded-4xl border border-border bg-text px-2.5 py-2 text-bg-surface">
 					<div>ST</div>
 				</div>
 			</Link>

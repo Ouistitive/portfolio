@@ -183,7 +183,40 @@
 		}
 	},
 	"hobbiesSection": {
-		"subheader": "What I like to do!"
+		"subheader": "What I like to do!",
+		"hobby1": {
+			"title": "Raspberry Pi home server",
+			"description": "I have a Raspberry Pi 5 to self host web applications (NextCloud, Portainer, ...)  and some of my own custom applications, allowing me to centralize my services while developing skills in system administration and web application deployment.",
+			"tags": [
+				"Home server",
+				"System administration",
+				"Web services",
+				"Application deployment",
+				"Automation"
+			]
+		},
+		"hobby2": {
+			"title": "Narrative video games",
+			"description": "I enjoy narrative video games such as NieR: Automata and the Persona series for their immersive worlds, engaging stories, and memorable characters.",
+			"tags": [
+				"Video games",
+				"Immersion",
+				"Storytelling",
+				"Characters",
+				"Narrative design"
+			]
+		},
+		"hobby3": {
+			"title": "Drawing",
+			"description": "Beginner in drawing, I enjoy using it as a means of personal expression and visual exploration. I like to depict characters I admire in poses that reflect their personality, often inspired by Japanese culture.",
+			"tags": [
+				"Drawing",
+				"Creativity",
+				"Visual art",
+				"Illustration",
+				"Artistic exploration"
+			]
+		}
 	},
 	"buttons": {
 		"github": "View on Github",
