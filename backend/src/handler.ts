@@ -38,7 +38,7 @@ export const handler = async (
   event: APIGatewayProxyEventV2,
 ): Promise<APIGatewayProxyStructuredResultV2> => {
   const method = event.requestContext.http.method;
-  const path = event.requestContext.http.path;
+  const path = event.requestContext.http.path.replace(/^\/api/, "") || "/";
   const key = `${method} ${path}`;
 
   for (const route of routes) {

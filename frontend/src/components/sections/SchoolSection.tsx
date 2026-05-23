@@ -1,39 +1,31 @@
+import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { IoSchool } from "react-icons/io5";
-import IUTLogo from "../../assets/certifications/IUT.jpg";
-import UTCLogo from "../../assets/certifications/UTC.png";
+import { getSchools } from "../../api/portfolio";
+import { useApiData } from "../../hooks/useApiData";
 import type { TimelineItemProps } from "../../types/types";
 import { SubHeader } from "../generics/SubHeader";
 import { Timeline } from "../generics/Timeline";
 
 export function SchoolSection() {
-	const { t } = useTranslation();
-	const schoolHistory: TimelineItemProps[] = [
-		{
-			img: UTCLogo,
-			from: t("schoolSection.utc.from"),
-			to: t("schoolSection.utc.to"),
-			title: t("schoolSection.utc.title"),
-			subtitle: t("schoolSection.utc.school"),
-			description: t("schoolSection.utc.description"),
-		},
-		{
-			img: IUTLogo,
-			from: t("schoolSection.iut.from"),
-			to: t("schoolSection.iut.to"),
-			title: t("schoolSection.iut.title"),
-			subtitle: t("schoolSection.iut.school"),
-			description: t("schoolSection.iut.description"),
-		},
-		{
-			Icon: IoSchool,
-			from: t("schoolSection.bac.from"),
-			to: t("schoolSection.bac.to"),
-			title: t("schoolSection.bac.title"),
-			subtitle: t("schoolSection.bac.school"),
-			description: t("schoolSection.bac.description"),
-		},
-	];
+	const { t, i18n } = useTranslation();
+	const lang = i18n.language as "en" | "fr";
+	const { data: apiSchools } = useApiData(getSchools);
+
+	const schoolHistory = useMemo<TimelineItemProps[]>(
+		() =>
+			apiSchools.map((s) => ({
+				img: s.logo ?? undefined,
+				Icon: s.logo ? undefined : IoSchool,
+				from: s.from[lang],
+				to: s.to[lang],
+				title: s.title[lang],
+				subtitle: s.school[lang],
+				description: s.description[lang],
+				tags: s.tags,
+			})),
+		[apiSchools, lang],
+	);
 
 	return (
 		<div className="flex flex-col items-center">

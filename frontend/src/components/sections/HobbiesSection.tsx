@@ -1,37 +1,27 @@
+import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { FaUser } from "react-icons/fa";
+import { getHobbies } from "../../api/portfolio";
+import { useApiData } from "../../hooks/useApiData";
 import { CTAButton } from "../business/CTAButton";
 import { ProjectCard, type ProjectCardProps } from "../business/ProjectCard";
 import { SubHeader } from "../generics/SubHeader";
 
 export function HobbiesSection() {
-	const { t } = useTranslation();
-	const projects: ProjectCardProps[] = [
-		{
-			key: "project1",
-			title: t("hobbiesSection.hobby1.title"),
-			description: t("hobbiesSection.hobby1.description"),
-			tags: t("hobbiesSection.hobby1.tags", {
-				returnObjects: true,
-			}) as string[],
-		},
-		{
-			key: "project2",
-			title: t("hobbiesSection.hobby2.title"),
-			description: t("hobbiesSection.hobby2.description"),
-			tags: t("hobbiesSection.hobby2.tags", {
-				returnObjects: true,
-			}) as string[],
-		},
-		{
-			key: "project3",
-			title: t("hobbiesSection.hobby3.title"),
-			description: t("hobbiesSection.hobby3.description"),
-			tags: t("hobbiesSection.hobby3.tags", {
-				returnObjects: true,
-			}) as string[],
-		},
-	];
+	const { t, i18n } = useTranslation();
+	const lang = i18n.language as "en" | "fr";
+	const { data: apiHobbies } = useApiData(getHobbies);
+
+	const projects = useMemo<ProjectCardProps[]>(
+		() =>
+			apiHobbies.map((h) => ({
+				key: h.id,
+				title: h.title[lang],
+				description: h.description[lang],
+				tags: h.tags,
+			})),
+		[apiHobbies, lang],
+	);
 
 	return (
 		<section className="flex flex-col items-center gap-15">

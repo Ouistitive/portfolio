@@ -1,39 +1,30 @@
+import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { FaAws, FaBrain, FaLanguage } from "react-icons/fa";
+import type { IconType } from "react-icons";
+import { getLearnings } from "../../api/portfolio";
+import { useApiData } from "../../hooks/useApiData";
 import { SkillCard, type SkillCardProps } from "../business/SkillCard";
 import { SubHeader } from "../generics/SubHeader";
 
+const learningIcons: IconType[] = [FaAws, FaBrain, FaLanguage];
+
 export function LearningsSection() {
-	const { t } = useTranslation();
-	const skills: SkillCardProps[] = [
-		{
-			Icon: FaAws,
-			key: "backend",
-			title: t("learningsSection.learning1.title"),
-			description: t("learningsSection.learning1.description"),
-			tags: t("learningsSection.learning1.tags", {
-				returnObjects: true,
-			}) as string[],
-		},
-		{
-			Icon: FaBrain,
-			key: "frontend",
-			title: t("learningsSection.learning2.title"),
-			description: t("learningsSection.learning2.description"),
-			tags: t("learningsSection.learning2.tags", {
-				returnObjects: true,
-			}) as string[],
-		},
-		{
-			Icon: FaLanguage,
-			key: "architecture",
-			title: t("learningsSection.learning3.title"),
-			description: t("learningsSection.learning3.description"),
-			tags: t("learningsSection.learning3.tags", {
-				returnObjects: true,
-			}) as string[],
-		},
-	];
+	const { t, i18n } = useTranslation();
+	const lang = i18n.language as "en" | "fr";
+	const { data: apiLearnings } = useApiData(getLearnings);
+
+	const skills = useMemo<SkillCardProps[]>(
+		() =>
+			apiLearnings.map((l, idx) => ({
+				Icon: learningIcons[idx] ?? FaAws,
+				key: l.id,
+				title: l.name[lang],
+				description: l.description[lang],
+				tags: l.tags,
+			})),
+		[apiLearnings, lang],
+	);
 
 	return (
 		<section className="mx-7 flex flex-col gap-15">

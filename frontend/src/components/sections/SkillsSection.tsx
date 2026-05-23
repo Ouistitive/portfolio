@@ -1,47 +1,36 @@
+import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { FaCloud, FaCode, FaServer } from "react-icons/fa";
 import { MdSchema } from "react-icons/md";
+import type { IconType } from "react-icons";
+import { getSkills } from "../../api/portfolio";
+import { useApiData } from "../../hooks/useApiData";
 import { SkillCard, type SkillCardProps } from "../business/SkillCard";
 import { SubHeader } from "../generics/SubHeader";
 
+const skillIconMap: Record<string, IconType> = {
+	backend: FaServer,
+	frontend: FaCode,
+	architecture: MdSchema,
+	cloud: FaCloud,
+};
+
 export function SkillsSection() {
-	const { t } = useTranslation();
-	const skills: SkillCardProps[] = [
-		{
-			Icon: FaServer,
-			key: "backend",
-			title: t("skillsSection.backend.title"),
-			description: t("skillsSection.backend.description"),
-			tags: t("skillsSection.backend.tags", {
-				returnObjects: true,
-			}) as string[],
-		},
-		{
-			Icon: FaCode,
-			key: "frontend",
-			title: t("skillsSection.frontend.title"),
-			description: t("skillsSection.frontend.description"),
-			tags: t("skillsSection.frontend.tags", {
-				returnObjects: true,
-			}) as string[],
-		},
-		{
-			Icon: MdSchema,
-			key: "architecture",
-			title: t("skillsSection.architecture.title"),
-			description: t("skillsSection.architecture.description"),
-			tags: t("skillsSection.architecture.tags", {
-				returnObjects: true,
-			}) as string[],
-		},
-		{
-			Icon: FaCloud,
-			key: "cloud",
-			title: t("skillsSection.cloud.title"),
-			description: t("skillsSection.cloud.description"),
-			tags: t("skillsSection.cloud.tags", { returnObjects: true }) as string[],
-		},
-	];
+	const { t, i18n } = useTranslation();
+	const lang = i18n.language as "en" | "fr";
+	const { data: apiSkills } = useApiData(getSkills);
+
+	const skills = useMemo<SkillCardProps[]>(
+		() =>
+			apiSkills.map((s) => ({
+				Icon: skillIconMap[s.category] ?? FaServer,
+				key: s.category,
+				title: s.name[lang],
+				description: s.description[lang],
+				tags: s.tags,
+			})),
+		[apiSkills, lang],
+	);
 
 	return (
 		<section className="mx-7 flex flex-col gap-15">

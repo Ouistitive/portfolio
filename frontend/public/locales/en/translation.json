@@ -14,132 +14,16 @@
 		"description": "Passionate about creation and innovation, I enjoy experimenting, building and finding original solutions for technical challenges."
 	},
 	"skillsSection": {
-		"subheader": "My mains skills",
-		"backend": {
-			"title": "Backend",
-			"description": "API conception and implementation of the business logic.",
-			"tags": [
-				"Node.JS",
-				"Java",
-				"Go",
-				"Express",
-				"SAP CAP (CDS)",
-				"Python",
-				"SpringBoot",
-				"Redis"
-			]
-		},
-		"frontend": {
-			"title": "Frontend",
-			"description": "Development of reactive and fluide web interfaces with a focus on accessibility and polished UX.",
-			"tags": [
-				"React",
-				"TypeScript",
-				"Tailwind CSS",
-				"SAPUI5",
-				"HTML",
-				"CSS",
-				"Vue.JS"
-			]
-		},
-		"architecture": {
-			"title": "Application architecture",
-			"description": "Conception of the architecture, components and data flows to ensure maintenability, performance and scalability.",
-			"tags": ["UML Diagram", "Object oriented programming"]
-		},
-		"cloud": {
-			"title": "Cloud",
-			"description": "Deploying and orchestrating applications in the cloud.",
-			"tags": ["SAP BTP"]
-		}
+		"subheader": "My mains skills"
 	},
 	"projectsSection": {
-		"subheader": "Here's my recent projects!",
-		"blackfridaySimulator": {
-			"title": "Black Friday simulation",
-			"description": "A Go-based simulation designed to model crowd dynamics during Black Friday, with the goal of identifying an optimal store layout that allows agents to navigate the entire store efficiently.\n\nThe system includes several types of agents: standard customers, selfish customers capable of stealing from other agents, and security guards responsible for reducing theft within their field of view.",
-			"tags": ["Multi-agents System", "Go / Ebiten", "Concurrency management"]
-		},
-		"bobby": {
-			"title": "Inventory management for UTC Student Organizations",
-			"description": "Bobby is a web application in Laravel and React to manage UTC student organizations' equipments. This application allows student organizations to display their inventory and create borrow requests from other associations. Integration of other services from UTC to ensure authentication and data synchronization.\n\nWe put a security layer in order to protect our web application from main security breaches (code injection, access control...).",
-			"tags": [
-				"PHP / Laravel",
-				"React / Typescript",
-				"IT Security",
-				"Access control"
-			]
-		},
-		"kanamaster": {
-			"title": "KanaMaster: Mobile application quiz",
-			"description": "KanaMaster is a Java-based mobile quiz application designed to help users learn the main Japanese characters known as kana.",
-			"tags": ["Java", "Android Studio"]
-		}
+		"subheader": "Here's my recent projects!"
 	},
 	"experienceSection": {
-		"subheader": "My professional experiences",
-		"apprenticeshipSAP": {
-			"from": "September 2024",
-			"to": "Now",
-			"title": "Cloud & Software Engineer Apprentice",
-			"company": "SAP France",
-			"description": "Design and Full-Stack development of a cloud platform on SAP BTP enabling access and permission management for Azure and SAP HANA datalakes, providing AI teams with secure data environments, with a SAP CAP/CDS backend and React interfaces built with UI5 Web Components.",
-			"tags": [
-				"SAP BTP",
-				"Full-Stack",
-				"SAP CAP (CDS)",
-				"SpringBoot",
-				"React",
-				"UI5"
-			]
-		},
-		"internshipIZHO": {
-			"from": "April 2024",
-			"to": "August 2024",
-			"title": "Developer Cloud Full-Stack Intern",
-			"company": "IZHO",
-			"description": "Development and optimization of Capcore, a web platform for energy consumption data management. Implemented multi-format data importers, built automated export pipelines, generated dynamic reporting features, and refactored backend components within an AWS-based microservices architecture.",
-			"tags": [
-				"AWS",
-				"Serverless",
-				"Microservices",
-				"Node.js",
-				"TypeScript",
-				"Chart.js"
-			]
-		},
-		"internshipSIMPLOS": {
-			"from": "April 2023",
-			"to": "June 2023",
-			"title": "Developer Web & Mobile Intern",
-			"company": "SIMPLOS",
-			"description": "Design and implementation of a WordPress plugin connecting e-commerce websites to the SIMPLOS platform to externalize customer authentication and data storage, with secure retrieval of required information for user registration and product purchases.",
-			"tags": ["Cybersecurity", "Mobile", "Flutter", "WordPress", "PHP"]
-		}
+		"subheader": "My professional experiences"
 	},
 	"schoolSection": {
-		"subheader": "My academic background and certifications!",
-		"utc": {
-			"from": "2024",
-			"to": "Now",
-			"title": "Master's Degree in Computer Engineering — Infrastructure and Information Systems",
-			"school": "Université de Technologie de Compiègne",
-			"description": "Engineering program in Computer Science, specializing in infrastructure and information systems. Covered distributed architectures, cloud computing, and the design of maintainable systems. Developed a particular interest in AI (multi-agent systems)."
-		},
-		"iut": {
-			"from": "2021",
-			"to": "2024",
-			"title": "Bachelor of Technology in Computer Science — Design, Development, and Testing",
-			"school": "University Institute of Technology, Paris Cité (IUT Paris Cité)",
-			"description": "Program in Computer Science emphasizing the design and development of maintainable applications. Worked on web and mobile projects and designed application architectures. Validated applications through unit and integration testing. Gained hands-on experience throughout the software development lifecycle."
-		},
-		"bac": {
-			"from": "2018",
-			"to": "2021",
-			"title": "French Baccalaureate — Major in Computer Science and Mathematics",
-			"school": "Rosa Parks High School",
-			"description": "Early experience in software development and algorithms. Created simple Python applications and web applications with HTML/CSS/JS. Worked with relational databases and learned fundamental data structures."
-		}
+		"subheader": "My academic background and certifications!"
 	},
 	"contactSection": {
 		"subheader": "Let's connect!",

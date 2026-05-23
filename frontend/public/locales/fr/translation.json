@@ -14,142 +14,16 @@
 		"description": "Passionné par l'innovation et la création, je prends plaisir à tester, bricoler et trouver des solutions originales à des problèmes techniques."
 	},
 	"skillsSection": {
-		"subheader": "Mes principales compétences",
-		"backend": {
-			"title": "Backend",
-			"description": "Conception d'API et implémentation de la logique métier.",
-			"tags": [
-				"Node.JS",
-				"Java",
-				"Go",
-				"Express",
-				"SAP CAP (CDS)",
-				"Python",
-				"SpringBoot",
-				"Redis"
-			]
-		},
-		"frontend": {
-			"title": "Frontend",
-			"description": "Développement d'interfaces réactives et fluides, en mettant l'accent sur l'accessibilité et une UX soignée.",
-			"tags": [
-				"React",
-				"TypeScript",
-				"Tailwind CSS",
-				"SAPUI5",
-				"HTML",
-				"CSS",
-				"Vue.JS"
-			]
-		},
-		"architecture": {
-			"title": "Architecture applicative",
-			"description": "Conception de l'architecture, des composants et des flux pour assurer maintenabilité, performance et évolutivité des projets.",
-			"tags": [
-				"Diagramme UML",
-				"Programmation orientée objet",
-				"Design Patterns"
-			]
-		},
-		"cloud": {
-			"title": "Cloud",
-			"description": "Déploiement et orchestration d'applications dans le cloud.",
-			"tags": ["SAP BTP"]
-		}
+		"subheader": "Mes principales compétences"
 	},
 	"projectsSection": {
-		"subheader": "Voici mes récents projets !",
-		"blackfridaySimulator": {
-			"title": "Simulation de Black Friday",
-			"description": "Simulation en Go visant à modéliser les mouvements de foule lors du Black Friday afin d'identifier l'agencement de magasin optimal permettant aux agents de parcourir l'ensemble de l'espace.\n\nLe système repose sur plusieurs types d'agents : des clients classiques, des clients égoïstes pouvant voler d'autres agents, et des agents de sécurité chargés de réduire le taux de vol dans leur champ de vision.",
-			"tags": [
-				"Système multi-agents",
-				"Go / Ebiten",
-				"Gestion de la concurrence"
-			]
-		},
-		"bobby": {
-			"title": "Gestion des inventaires des associations",
-			"description": "Application web de gestion des objets des associations de l'UTC en Laravel et React. L'application permet aux associations de visualiser leur inventaire et faire des demandes d'emprunts d'objets à d'autres associations. Intégration avec d'autres services de l'UTC pour assurer l'authentification et la synchronisation des données.\n\nNous avons mis en place des sécurités dans le but de protéger notre application web, des principales failles de sécurité (injection de code, contrôles des accès et permissions...).",
-			"tags": [
-				"PHP / Laravel",
-				"React / Typescript",
-				"Sécurité informatique",
-				"Contrôles des accès"
-			]
-		},
-		"kanamaster": {
-			"title": "KanaMaster",
-			"description": "Application mobile de quiz en Java pour apprendre les principaux caractères japonais.",
-			"tags": ["Java", "Android Studio"]
-		}
+		"subheader": "Voici mes récents projets !"
 	},
 	"experienceSection": {
-		"subheader": "Mes expériences professionnelles",
-		"apprenticeshipSAP": {
-			"from": "Septembre 2024",
-			"to": "Maintenant",
-			"title": "Alternant ingénieur Cloud & Software",
-			"company": "SAP France",
-			"description": "Conception et développement Full-Stack d'une plateforme cloud sur SAP BTP permettant la gestion des accès et des permissions sur des datalakes Azure et SAP HANA, afin de fournir aux équipes AI des environnements data sécurisés, avec backend SAP CAP/CDS et interfaces React utilisant UI5 Web Components, en méthode Agile SAFe et mentorat de stagiaires et externes.",
-			"tags": [
-				"SAP BTP",
-				"Full-Stack",
-				"SAP CAP (CDS)",
-				"SpringBoot",
-				"React",
-				"UI5",
-				"Agile SAFe",
-				"Mentorat"
-			]
-		},
-		"internshipIZHO": {
-			"from": "Avril 2024",
-			"to": "Août 2024",
-			"title": "Stagiaire développeur Cloud Full-Stack",
-			"company": "IZHO",
-			"description": "Développement et optimisation de la plateforme web Capcore pour la gestion de données de consommation énergétique, avec implémentation d'importeurs multi-formats, création d'exporteurs automatisés, génération de rapports dynamiques et refonte de composants backend au sein d'une architecture micro-services sur AWS.",
-			"tags": [
-				"AWS",
-				"Serverless",
-				"Microservices",
-				"Node.js",
-				"TypeScript",
-				"Chart.js"
-			]
-		},
-		"internshipSIMPLOS": {
-			"from": "Avril 2023",
-			"to": "Juin 2023",
-			"title": "Stagiaire développeur web et mobile",
-			"company": "SIMPLOS",
-			"description": "Conception d'un plugin WordPress connectant les sites e-commerce à la plateforme SIMPLOS pour externaliser l'authentification et le stockage des données clients, avec récupération sécurisée des informations nécessaires à l'inscription ou à l'achat de produit.",
-			"tags": ["Cybersecurité", "Mobile", "Flutter", "WordPress", "PHP"]
-		}
+		"subheader": "Mes expériences professionnelles"
 	},
 	"schoolSection": {
-		"subheader": "Mon parcours académique et mes certifications",
-		"utc": {
-			"from": "2024",
-			"to": "En cours",
-			"title": "Diplôme d'ingénieur — Génie informatique filière Infrastructure et Système d'information",
-			"school": "Université de Technologie de Compiègne",
-			"description": "Formation d'ingénieur en informatique orientée infrastructures et systèmes d'information, avec apprentissage des principes des architectures distribuées, du cloud et de la conception de systèmes évolutifs, avec un intérêt pour les systèmes intelligents (systèmes multi-agents)."
-		},
-		"iut": {
-			"from": "2021",
-			"to": "2024",
-			"title": "BUT Informatique — Réalisation d'applications : conception, développement, validation",
-			"school": "IUT de Paris Cité",
-			"description": "Formation technique axée sur la conception et le développement d'applications maintenables. Réalisation de projets web et mobiles, mise en place d'architectures logicielles, et validation des applications via des tests unitaires et d'intégration, avec une forte approche pratique du cycle de développement."
-		},
-		"bac": {
-			"from": "2018",
-			"to": "2021",
-			"title": "Baccalauréat général — Spécialités Informatique et Mathématique",
-			"school": "Lycée Rosa Parks",
-			"description": "Premières expériences en développement logiciel et en algorithmique : création d'applications simples en Python, conception d'applications web, manipulation de bases de données relationnelles et apprentissage des structures de données fondamentales."
-		}
+		"subheader": "Mon parcours académique et mes certifications"
 	},
 	"contactSection": {
 		"subheader": "Restons en contact !",

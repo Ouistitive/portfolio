@@ -3,7 +3,7 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"homepage": "https://ouistitive.github.io/portfolio/",
+	"homepage": ".",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
@@ -13,7 +13,7 @@
 		"format": "npx @biomejs/biome check --write",
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d dist",
-		"aws-deploy": "npm run build && aws s3 sync dist/ s3://steven-tea-portfolio-568289071866-eu-west-3-an --delete"
+		"aws-deploy": "npm run build && aws s3 sync dist/ s3://portfolio-frontend-568289071866-eu-west-3 --delete"
 	},
 	"dependencies": {
 		"@radix-ui/react-dialog": "^1.1.15",

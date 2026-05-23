@@ -1,42 +1,27 @@
+import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import BlackFridayPreview from "../../assets/projects/blackfriday.png";
-import BobbyPreview from "../../assets/projects/bobby.png";
-import { constants } from "../../utils/constants";
+import { getProjects } from "../../api/portfolio";
+import { useApiData } from "../../hooks/useApiData";
 import { ProjectCard, type ProjectCardProps } from "../business/ProjectCard";
 import { SubHeader } from "../generics/SubHeader";
 
 export function ProjectsSection() {
-	const { t } = useTranslation();
-	const projects: ProjectCardProps[] = [
-		{
-			key: "project1",
-			title: t("projectsSection.blackfridaySimulator.title"),
-			description: t("projectsSection.blackfridaySimulator.description"),
-			tags: t("projectsSection.blackfridaySimulator.tags", {
-				returnObjects: true,
-			}) as string[],
-			preview: BlackFridayPreview,
-			viewGithub: constants.BLACK_FRIDAY_LINK,
-		},
-		{
-			key: "project2",
-			title: t("projectsSection.bobby.title"),
-			description: t("projectsSection.bobby.description"),
-			tags: t("projectsSection.bobby.tags", {
-				returnObjects: true,
-			}) as string[],
-			preview: BobbyPreview,
-		},
-		{
-			key: "project3",
-			title: t("projectsSection.kanamaster.title"),
-			description: t("projectsSection.kanamaster.description"),
-			tags: t("projectsSection.kanamaster.tags", {
-				returnObjects: true,
-			}) as string[],
-			viewGithub: constants.KANA_MASTER_LINK,
-		},
-	];
+	const { t, i18n } = useTranslation();
+	const lang = i18n.language as "en" | "fr";
+	const { data: apiProjects } = useApiData(getProjects);
+
+	const projects = useMemo<ProjectCardProps[]>(
+		() =>
+			apiProjects.map((p) => ({
+				key: p.id,
+				title: p.title[lang],
+				description: p.description[lang],
+				tags: p.tags,
+				preview: p.previewImage ?? undefined,
+				viewGithub: p.githubLink ?? undefined,
+			})),
+		[apiProjects, lang],
+	);
 
 	return (
 		<section className="flex flex-col items-center gap-15">
