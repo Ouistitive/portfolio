@@ -1,0 +1,8 @@
+node_modules/
+dist/
+cdk.out/
+cdk-outputs.json
+*.js.map
+*.d.ts
+!scripts/**/*.d.ts
+.env
