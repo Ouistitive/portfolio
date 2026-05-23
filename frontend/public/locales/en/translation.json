@@ -1,0 +1,111 @@
+{
+	"navbar": {
+		"skills": "Skills",
+		"projects": "Projects",
+		"experience": "Experiences",
+		"school": "School",
+		"contact": "Contact",
+		"learnings": "My learnings",
+		"hobbies": "My hobbies"
+	},
+	"introductionSection": {
+		"welcome": "Hi, I'm Steven Tea!",
+		"profession": "Cloud & Software engineer",
+		"description": "Passionate about creation and innovation, I enjoy experimenting, building and finding original solutions for technical challenges."
+	},
+	"skillsSection": {
+		"subheader": "My mains skills"
+	},
+	"projectsSection": {
+		"subheader": "Here's my recent projects!"
+	},
+	"experienceSection": {
+		"subheader": "My professional experiences"
+	},
+	"schoolSection": {
+		"subheader": "My academic background and certifications!"
+	},
+	"contactSection": {
+		"subheader": "Let's connect!",
+		"contacts": {
+			"github": "My projects",
+			"linkedin": "My experience",
+			"email": "Let's discuss!"
+		}
+	},
+	"aboutMeSection": {
+		"welcome": "More about me?",
+		"description": "I enjoy discovering new technologies, experimenting with ideas, and building projects just for the fun of learning and creating something cool along the way!"
+	},
+	"learningsSection": {
+		"subheader": "To satisfy my curiosity!",
+		"learning1": {
+			"title": "AWS Certified Cloud Practitioner",
+			"description": "I am currently taking AWS Certified Cloud Practitioner courses (CLF-C02) to learn and understand the best practices and cost optimization strategies for AWS cloud architectures.",
+			"tags": [
+				"AWS",
+				"Cloud",
+				"Cloud fundamentals",
+				"Cloud computing",
+				"Cost optimization"
+			]
+		},
+		"learning2": {
+			"title": "Reinforcement Learning",
+			"description": "I am learning reinforcement learning through David Silver's course to understand how to design agents capable of making optimal decisions, with the goal of developing an intelligent multi-agent system for package delivery.",
+			"tags": [
+				"Distributed systems",
+				"Machine Learning",
+				"Decision-making agents",
+				"Multi-agent Systems"
+			]
+		},
+		"learning3": {
+			"title": "Japanese language",
+			"description": "I am currently learning Japanese at Université de technologie de Compiègne (UTC) as well as independently to improve my language skills and deepen my understanding of Japanese culture, with the goal of reaching an A2 level.",
+			"tags": ["Language", "Japanese", "Communication"]
+		}
+	},
+	"hobbiesSection": {
+		"subheader": "What I like to do!",
+		"hobby1": {
+			"title": "Raspberry Pi home server",
+			"description": "I have a Raspberry Pi 5 to self host web applications (NextCloud, Portainer, ...)  and some of my own custom applications, allowing me to centralize my services while developing skills in system administration and web application deployment.",
+			"tags": [
+				"Home server",
+				"System administration",
+				"Web services",
+				"Application deployment",
+				"Automation"
+			]
+		},
+		"hobby2": {
+			"title": "Narrative video games",
+			"description": "I enjoy narrative video games such as NieR: Automata and the Persona series for their immersive worlds, engaging stories, and memorable characters.",
+			"tags": [
+				"Video games",
+				"Immersion",
+				"Storytelling",
+				"Characters",
+				"Narrative design"
+			]
+		},
+		"hobby3": {
+			"title": "Drawing",
+			"description": "Beginner in drawing, I enjoy using it as a means of personal expression and visual exploration. I like to depict characters I admire in poses that reflect their personality, often inspired by Japanese culture.",
+			"tags": [
+				"Drawing",
+				"Creativity",
+				"Visual art",
+				"Illustration",
+				"Artistic exploration"
+			]
+		}
+	},
+	"buttons": {
+		"github": "View on Github",
+		"seeMore": "See more",
+		"aboutMe": "About me",
+		"myCareer": "My career"
+	}
+}

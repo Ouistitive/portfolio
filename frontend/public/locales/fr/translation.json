@@ -1,0 +1,111 @@
+{
+	"navbar": {
+		"skills": "Compétences",
+		"projects": "Projets",
+		"experience": "Expériences",
+		"school": "Formations",
+		"contact": "Contact",
+		"learnings": "Mes apprentissages",
+		"hobbies": "Mes hobbies"
+	},
+	"introductionSection": {
+		"welcome": "Salut, je suis Steven Tea !",
+		"profession": "Ingénieur Cloud & Logiciel",
+		"description": "Passionné par l'innovation et la création, je prends plaisir à tester, bricoler et trouver des solutions originales à des problèmes techniques."
+	},
+	"skillsSection": {
+		"subheader": "Mes principales compétences"
+	},
+	"projectsSection": {
+		"subheader": "Voici mes récents projets !"
+	},
+	"experienceSection": {
+		"subheader": "Mes expériences professionnelles"
+	},
+	"schoolSection": {
+		"subheader": "Mon parcours académique et mes certifications"
+	},
+	"contactSection": {
+		"subheader": "Restons en contact !",
+		"contacts": {
+			"github": "Mes projets",
+			"linkedin": "Mes expériences",
+			"email": "Discutons !"
+		}
+	},
+	"aboutMeSection": {
+		"welcome": "Plus à propos de moi ?",
+		"description": "J'aime découvrir de nouvelles technologies, tester mes idées et développer des projets pour m'amuser !"
+	},
+	"learningsSection": {
+		"subheader": "Pour satisfaire ma curiosité !",
+		"learning1": {
+			"title": "AWS Certified Cloud Practitioner",
+			"description": "Actuellement, je suis les cours de AWS (CLF-C02) dans le but d'apprendre et comprendre les meilleurs pratiques et optimisation de coût pour les architectures cloud sur AWS.",
+			"tags": [
+				"AWS",
+				"Cloud",
+				"Fondamentaux cloud",
+				"Cloud computing",
+				"Optimisation des coûts"
+			]
+		},
+		"learning2": {
+			"title": "Apprentissage par renforcement",
+			"description": "Je me forme au reinforcement learning via les cours de David Silver pour comprendre comment des agents intelligents apprennent à prendre des décisions optimales, dans le but de faire un système multi-agents intelligent de drônes pour la livraison de colis.",
+			"tags": [
+				"Système distribué",
+				"Machine Learning",
+				"Agents de prise de décision",
+				"Système multi-agents"
+			]
+		},
+		"learning3": {
+			"title": "Langue japonaise",
+			"description": "J'apprends actuellement la langue japonaise à l'UTC ainsi qu'en autonomie afin de développer mes compétences linguistiques et ma compréhension de la culture japonaise afin d'atteindre le niveau A2.",
+			"tags": ["Langue", "Japonais", "Communication"]
+		}
+	},
+	"hobbiesSection": {
+		"subheader": "Ce que j'aime !",
+		"hobby1": {
+			"title": "Raspberry Pi home server",
+			"description": "J'utilise une Raspberry Pi 5 pour héberger des applications web (NextCloud, Portainer, ...) ainsi que mes propres applications développées, ce qui me permet de centraliser mes services numériques tout en pratiquant l'administration système et le déploiement d'applications.",
+			"tags": [
+				"Home server",
+				"Administration système",
+				"Services web",
+				"Déploiement d'applications",
+				"Automatisation"
+			]
+		},
+		"hobby2": {
+			"title": "Jeux vidéo narratifs",
+			"description": "Je suis passionné par les jeux vidéo narratifs tels que NieR: Automata ou la série Persona, pour leur univers immersif ainsi que les histoires et personnages qui m'ont grandement marqué.",
+			"tags": [
+				"Jeux vidéo",
+				"Immersion",
+				"Storytelling",
+				"Personnages",
+				"Design narratif"
+			]
+		},
+		"hobby3": {
+			"title": "Dessin",
+			"description": "Débutant en dessin, j'aime l'utiliser comme moyen d'expression personnelle et d'exploration visuelle, pour représenter des personnages que j'apprécie avec des poses qui reflètent leur personnalité, souvent inspiré par la culture japonaise.",
+			"tags": [
+				"Dessin",
+				"Créativité",
+				"Art visuel",
+				"Illustration",
+				"Exploration artistique"
+			]
+		}
+	},
+	"buttons": {
+		"github": "Voir sur Github",
+		"seeMore": "Voir plus",
+		"aboutMe": "À propos de moi",
+		"myCareer": "Mon parcours"
+	}
+}
