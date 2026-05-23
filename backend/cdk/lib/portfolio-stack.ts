@@ -144,7 +144,7 @@ export class PortfolioStack extends cdk.Stack {
           },
         ],
 
-        aliases: ["steven-tea.com", "www.steven-tea.com"],
+        aliases: ["steventea.com", "www.steventea.com"],
 
         viewerCertificate: {
           acmCertificateArn:
