@@ -36,14 +36,19 @@ export function SkillsSection() {
 		<section className="mx-7 flex flex-col gap-15">
 			<SubHeader title={t("skillsSection.subheader")} />
 			<div className="flex flex-col gap-8 md:mx-60 md:grid md:grid-cols-3">
-				{skills.map((skill) => (
-					<SkillCard
+				{skills.map((skill, index) => (
+					<div
 						key={skill.key}
-						Icon={skill.Icon}
-						title={skill.title}
-						description={skill.description}
-						tags={skill.tags}
-					/>
+						className={index === skills.length - 1 && skills.length % 3 === 1 ? "md:col-start-2" : ""}
+					>
+						<SkillCard
+							key={skill.title}
+							Icon={skill.Icon}
+							title={skill.title}
+							description={skill.description}
+							tags={skill.tags}
+						/>
+					</div>
 				))}
 			</div>
 		</section>

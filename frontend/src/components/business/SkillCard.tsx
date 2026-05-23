@@ -12,7 +12,7 @@ export interface SkillCardProps {
 
 export function SkillCard({ Icon, title, description, tags }: SkillCardProps) {
 	return (
-		<Card className="flex flex-col gap-3">
+		<Card className="flex flex-col gap-3 h-full">
 			<div className="flex items-center gap-4">
 				<Icon className="shrink-0 text-xl md:text-2xl lg:text-3xl" />
 				<p className="font-bold text-xl">{title}</p>
