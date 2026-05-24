@@ -1,9 +1,7 @@
 name: Deploy Backend to AWS Lambda
 
 on:
-  push:
-    branches:
-      - main
+  push
 
 jobs:
   build-and-deploy:
