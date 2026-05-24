@@ -1,2 +1,7 @@
-cd frontend && npx tsc --noEmit && npx @biomejs/biome check .
-cd backend && npx tsc --noEmit
+frontend_tsc=0; frontend_biome=0; backend_tsc=0
+
+(cd frontend && npx tsc --noEmit) || frontend_tsc=$?
+(cd frontend && npx @biomejs/biome check --write .) || frontend_biome=$?
+(cd backend && npx tsc --noEmit) || backend_tsc=$?
+
+[ $frontend_tsc -eq 0 ] && [ $frontend_biome -eq 0 ] && [ $backend_tsc -eq 0 ]

@@ -1,11 +1,15 @@
 # My eportfolio
 
-My new updated portfolio about my carreer, my projects, diploma and certifications, and many more!
+My portfolio about my carreer, my projects, diploma and certifications, and many more!
+Hosted on AWS.
 
 ## Project structure
 
 This project uses the following structure:
 
+### Backend
+
+### Frontend
 - src/
     - assets/       # Images and static files
     - components/   # Reusable UI components
