@@ -1,8 +1,8 @@
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
+import type { IconType } from "react-icons";
 import { FaCloud, FaCode, FaServer } from "react-icons/fa";
 import { MdSchema } from "react-icons/md";
-import type { IconType } from "react-icons";
 import { getSkills } from "../../api/portfolio";
 import { useApiData } from "../../hooks/useApiData";
 import { SkillCard, type SkillCardProps } from "../business/SkillCard";
@@ -39,7 +39,11 @@ export function SkillsSection() {
 				{skills.map((skill, index) => (
 					<div
 						key={skill.key}
-						className={index === skills.length - 1 && skills.length % 3 === 1 ? "md:col-start-2" : ""}
+						className={
+							index === skills.length - 1 && skills.length % 3 === 1
+								? "md:col-start-2"
+								: ""
+						}
 					>
 						<SkillCard
 							key={skill.title}

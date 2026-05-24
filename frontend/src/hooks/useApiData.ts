@@ -36,6 +36,7 @@ export function useApiData<T>(
 		return () => {
 			cancelled = true;
 		};
+		// biome-ignore lint/correctness/useExhaustiveDependencies: dynamic deps for wrapper hook
 	}, deps);
 
 	return { data, isLoading, error };

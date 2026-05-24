@@ -148,7 +148,7 @@ export class PortfolioStack extends cdk.Stack {
 
         viewerCertificate: {
           acmCertificateArn:
-            "arn:aws:acm:us-east-1:568289071866:certificate/04fe1611-f0a8-466f-b15b-33806406e6fd",
+            "arn:aws:acm:us-east-1:568289071866:certificate/df0caf49-032a-43ac-b392-2daeb8fa70d4",
           sslSupportMethod: "sni-only",
           minimumProtocolVersion: "TLSv1.2_2021",
         },

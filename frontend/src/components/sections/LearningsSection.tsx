@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import { FaAws, FaBrain, FaLanguage } from "react-icons/fa";
 import type { IconType } from "react-icons";
+import { FaAws, FaBrain, FaLanguage } from "react-icons/fa";
 import { getLearnings } from "../../api/portfolio";
 import { useApiData } from "../../hooks/useApiData";
 import { SkillCard, type SkillCardProps } from "../business/SkillCard";
