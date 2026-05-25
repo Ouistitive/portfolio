@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import type { IconType } from "react-icons";
 import { FaCloud, FaCode, FaServer } from "react-icons/fa";
 import { MdSchema } from "react-icons/md";
+import { TbAutomation } from "react-icons/tb";
 import { getSkills } from "../../api/portfolio";
 import { useApiData } from "../../hooks/useApiData";
 import { SkillCard, type SkillCardProps } from "../business/SkillCard";
@@ -11,8 +12,10 @@ import { SubHeader } from "../generics/SubHeader";
 const skillIconMap: Record<string, IconType> = {
 	backend: FaServer,
 	frontend: FaCode,
+	web: FaServer,
 	architecture: MdSchema,
 	cloud: FaCloud,
+	devops: TbAutomation,
 };
 
 export function SkillsSection() {

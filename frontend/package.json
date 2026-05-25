@@ -12,8 +12,7 @@
 		"prepare": "husky",
 		"format": "npx @biomejs/biome check --write",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d dist",
-		"aws-deploy": "npm run build && aws s3 sync dist/ s3://portfolio-frontend-568289071866-eu-west-3 --delete"
+		"deploy": "npm run predeploy && aws s3 sync dist/ s3://portfolio-frontend-568289071866-eu-west-3 --delete"
 	},
 	"dependencies": {
 		"@radix-ui/react-dialog": "^1.1.15",
