@@ -17,7 +17,7 @@
     "build:frontend": "cd frontend && npm run build",
     "build:all": "npm run build:backend && npm run build:frontend",
     "deploy:backend": "cd backend && npm run deploy",
-    "deploy:frontend": "cd frontend && npm run aws-deploy",
+    "deploy:frontend": "cd frontend && npm run deploy",
     "deploy:all": "npm run deploy:backend && npm run deploy:frontend"
   },
   "dependencies": {

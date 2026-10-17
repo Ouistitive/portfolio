@@ -20,7 +20,7 @@ export function SchoolSection() {
 				from: s.from[lang],
 				to: s.to[lang],
 				title: s.title[lang],
-				subtitle: s.school[lang],
+				place: s.school[lang],
 				description: s.description[lang],
 				tags: s.tags,
 			})),

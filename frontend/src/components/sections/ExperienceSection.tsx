@@ -13,15 +13,17 @@ export function ExperienceSection() {
 
 	const experienceHistory = useMemo<TimelineItemProps[]>(
 		() =>
-			apiExperiences.map((e) => ({
-				img: e.logo ?? undefined,
-				from: e.from[lang],
-				to: e.to[lang],
-				title: e.title[lang],
-				subtitle: e.company[lang],
-				description: e.description[lang],
-				tags: e.tags,
-			})),
+			apiExperiences.flatMap((e) =>
+				e.positions.map((p) => ({
+					img: e.logo ?? undefined,
+					from: p.from[lang],
+					to: p.to[lang],
+					title: p.title[lang],
+					place: e.company[lang],
+					description: p.description[lang],
+					tags: p.tags,
+				})),
+			),
 		[apiExperiences, lang],
 	);
 

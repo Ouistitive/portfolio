@@ -14,16 +14,21 @@ export interface ApiProject {
 	createdAt: string;
 }
 
-export interface ApiExperience {
+export interface ApiExperiencePosition {
 	id: string;
-	title: BilingualField;
-	company: BilingualField;
 	description: BilingualField;
 	from: BilingualField;
-	to: BilingualField;
 	tags: string[];
+	title: BilingualField;
+	to: BilingualField;
+}
+
+export interface ApiExperience {
+	id: string;
+	company: BilingualField;
 	logo?: string;
 	order: number;
+	positions: ApiExperiencePosition[];
 	createdAt: string;
 }
 

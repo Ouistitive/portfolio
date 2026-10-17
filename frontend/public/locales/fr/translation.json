@@ -20,7 +20,8 @@
 		"subheader": "Voici mes récents projets !"
 	},
 	"experienceSection": {
-		"subheader": "Mes expériences professionnelles"
+		"subheader": "Mes expériences professionnelles",
+		"mobility": "Mobilité interne"
 	},
 	"schoolSection": {
 		"subheader": "Mon parcours académique et mes certifications"
