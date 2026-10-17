@@ -1,5 +1,6 @@
 import i18next from "i18next";
 import { useEffect, useRef, useState } from "react";
+import ReactCountryFlag from "react-country-flag";
 import { GrLanguage } from "react-icons/gr";
 import type { LanguageAvailable } from "../../types/types";
 import { constants } from "../../utils/constants";
@@ -50,9 +51,12 @@ export function LanguageOptions() {
 							onClick={() => {
 								changeLanguage(language as LanguageAvailable);
 							}}
-							className="w-full cursor-pointer px-3 py-2 text-right hover:bg-bg"
+							className="flex w-full cursor-pointer items-center gap-2 px-3 py-2 text-right hover:bg-bg"
 						>
-							{language}
+							<ReactCountryFlag
+								countryCode={language === "EN" ? "US" : language}
+							/>
+							<p>{language}</p>
 						</button>
 					))}
 			</div>
