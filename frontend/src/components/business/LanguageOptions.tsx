@@ -32,7 +32,7 @@ export function LanguageOptions() {
 	};
 
 	return (
-		<div ref={ref} className="relative">
+		<div ref={ref} className="nerd-font relative">
 			<button
 				type="button"
 				onClick={() => setOpen((v) => !v)}

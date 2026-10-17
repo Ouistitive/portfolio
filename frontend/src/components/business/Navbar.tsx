@@ -28,7 +28,7 @@ export function Navbar({ linkProfile, navbarSections }: NavbarProps) {
 		>
 			<Link to={linkProfile}>
 				<div className="cursor-pointer rounded-4xl border border-border bg-text px-2.5 py-2 text-bg-surface">
-					<div>ST</div>
+					<div className="nerd-font">ST</div>
 				</div>
 			</Link>
 

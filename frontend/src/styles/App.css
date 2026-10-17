@@ -2,6 +2,18 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@font-face {
+	font-family: "NerdFont";
+	src: url("/fonts/AtkynsonMonoNerdFont-Regular.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+.nerd-font {
+	font-family: "NerdFont", monospace;
+}
+
 @theme {
 	--color-bg: #ededed;
 	--color-bg-surface: #dcdcdc;
