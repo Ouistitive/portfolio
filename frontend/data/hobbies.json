@@ -1,0 +1,62 @@
+[
+	{
+		"id": "ef23454d-a0e2-4079-887c-c13c2e2e62f4",
+		"createdAt": "2026-10-17T14:44:16.733Z",
+		"description": {
+			"en": "I enjoy narrative video games such as NieR: Automata and the Persona series for their immersive worlds, engaging stories, and memorable characters.",
+			"fr": "Je suis passionné par les jeux vidéo narratifs tels que NieR: Automata ou la série Persona, pour leur univers immersif ainsi que les histoires et personnages qui m'ont grandement marqué."
+		},
+		"order": 2,
+		"tags": [
+			"Video games",
+			"Immersion",
+			"Storytelling",
+			"Characters",
+			"Narrative design"
+		],
+		"title": {
+			"en": "Narrative video games",
+			"fr": "Jeux vidéo narratifs"
+		}
+	},
+	{
+		"id": "635226aa-a88c-48bc-8b76-2a3c9ef19e35",
+		"createdAt": "2026-10-17T14:44:16.733Z",
+		"description": {
+			"en": "Beginner in drawing, I enjoy using it as a means of personal expression and visual exploration. I like to depict characters I admire in poses that reflect their personality, often inspired by Japanese culture.",
+			"fr": "Débutant en dessin, j'aime l'utiliser comme moyen d'expression personnelle et d'exploration visuelle, pour représenter des personnages que j'apprécie avec des poses qui reflètent leur personnalité, souvent inspiré par la culture japonaise."
+		},
+		"order": 3,
+		"tags": [
+			"Drawing",
+			"Creativity",
+			"Visual art",
+			"Illustration",
+			"Artistic exploration"
+		],
+		"title": {
+			"en": "Drawing",
+			"fr": "Dessin"
+		}
+	},
+	{
+		"id": "d8a363d2-ee11-4f74-9102-41f6205e8eb1",
+		"createdAt": "2026-10-17T14:44:16.733Z",
+		"description": {
+			"en": "I have a Raspberry Pi 5 to self host web applications (NextCloud, Portainer, ...) and some of my own custom applications, allowing me to centralize my services while developing skills in system administration and web application deployment.",
+			"fr": "J'utilise une Raspberry Pi 5 pour héberger des applications web (NextCloud, Portainer, ...) ainsi que mes propres applications développées, ce qui me permet de centraliser mes services numériques tout en pratiquant l'administration système et le déploiement d'applications."
+		},
+		"order": 1,
+		"tags": [
+			"Home server",
+			"System administration",
+			"Web services",
+			"Application deployment",
+			"Automation"
+		],
+		"title": {
+			"en": "Raspberry Pi home server",
+			"fr": "Raspberry Pi home server"
+		}
+	}
+]

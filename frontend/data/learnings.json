@@ -1,0 +1,55 @@
+[
+	{
+		"id": "743a7ed7-c9f6-4d23-8a86-e634b8158039",
+		"createdAt": "2026-10-17T14:44:16.733Z",
+		"description": {
+			"en": "I am currently taking AWS Certified Cloud Practitioner courses (CLF-C02) to learn and understand the best practices and cost optimization strategies for AWS cloud architectures.",
+			"fr": "Actuellement, je suis les cours de AWS (CLF-C02) dans le but d'apprendre et comprendre les meilleurs pratiques et optimisation de coût pour les architectures cloud sur AWS."
+		},
+		"name": {
+			"en": "AWS Certified Cloud Practitioner",
+			"fr": "AWS Certified Cloud Practitioner"
+		},
+		"order": 1,
+		"tags": [
+			"AWS",
+			"Cloud",
+			"Cloud fundamentals",
+			"Cloud computing",
+			"Cost optimization"
+		]
+	},
+	{
+		"id": "c2525f92-9d4b-4f61-9518-62f9a1fb1ddd",
+		"createdAt": "2026-10-17T14:44:16.733Z",
+		"description": {
+			"en": "I am learning reinforcement learning through David Silver's course to understand how to design agents capable of making optimal decisions, with the goal of developing an intelligent multi-agent system for package delivery.",
+			"fr": "Je me forme au reinforcement learning via les cours de David Silver pour comprendre comment des agents intelligents apprennent à prendre des décisions optimales, dans le but de faire un système multi-agents intelligent de drônes pour la livraison de colis."
+		},
+		"name": {
+			"en": "Reinforcement Learning",
+			"fr": "Apprentissage par renforcement"
+		},
+		"order": 2,
+		"tags": [
+			"Distributed systems",
+			"Machine Learning",
+			"Decision-making agents",
+			"Multi-agent Systems"
+		]
+	},
+	{
+		"id": "a2283b47-327e-4de9-8161-ec691950aa03",
+		"createdAt": "2026-10-17T14:44:16.733Z",
+		"description": {
+			"en": "I am currently learning Japanese at Université de technologie de Compiègne (UTC) as well as independently to improve my language skills and deepen my understanding of Japanese culture, with the goal of reaching an B1 level.",
+			"fr": "J'apprends actuellement la langue japonaise à l'UTC et en autonomie. Dans le but de développer mes compétences linguistiques et ma compréhension de la culture japonaise afin d'atteindre le niveau B1."
+		},
+		"name": {
+			"en": "Japanese language",
+			"fr": "Langue japonaise"
+		},
+		"order": 3,
+		"tags": ["Language", "Japanese", "Communication"]
+	}
+]

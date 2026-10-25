@@ -9,7 +9,7 @@ export interface ApiProject {
 	description: BilingualField;
 	tags: string[];
 	githubLink?: string;
-	previewImage?: string;
+	previewImages?: string[];
 	order: number;
 	createdAt: string;
 }

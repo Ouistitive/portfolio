@@ -1,0 +1,83 @@
+[
+	{
+		"id": "0f37c4c2-2f47-45f1-ae74-1fd4c855596c",
+		"createdAt": "2026-10-17T14:44:16.733Z",
+		"description": {
+			"en": "Engineering program in Computer Science, specializing in infrastructure and information systems. Covered distributed architectures, cloud computing, and the design of maintainable systems. Developed a particular interest in AI (multi-agent systems, machine learning and information indexation).",
+			"fr": "Formation d'ingénieur en informatique orientée infrastructures et systèmes d'information, avec apprentissage des principes des architectures distribuées, du cloud et de la conception de systèmes évolutifs, avec un intérêt important pour les systèmes intelligents (systèmes multi-agents, machine learning et indexation d'information)."
+		},
+		"from": {
+			"en": "2024",
+			"fr": "2024"
+		},
+		"logo": "/assets/certifications/UTC.png",
+		"order": 1,
+		"school": {
+			"en": "Université de Technologie de Compiègne",
+			"fr": "Université de Technologie de Compiègne"
+		},
+		"tags": [],
+		"title": {
+			"en": "Master's Degree in Computer Engineering",
+			"fr": "Diplôme d'ingénieur — Génie informatique"
+		},
+		"to": {
+			"en": "Now",
+			"fr": "En cours"
+		}
+	},
+	{
+		"id": "85a41dfc-5619-4ada-88c9-787ef36f7262",
+		"createdAt": "2026-10-17T14:44:16.733Z",
+		"description": {
+			"en": "Early experience in software development and algorithms. Created simple Python applications and web applications with HTML/CSS/JS.Worked with relational databases and learned fundamental data structures.",
+			"fr": "Premières expériences en développement logiciel et en algorithmique : création d'applications simples en Python, conception d'applications web, manipulation de bases de données relationnelles et apprentissage des structures de données fondamentales."
+		},
+		"from": {
+			"en": "2018",
+			"fr": "2018"
+		},
+		"logo": null,
+		"order": 3,
+		"school": {
+			"en": "Rosa Parks High School",
+			"fr": "Lycée Rosa Parks"
+		},
+		"tags": [],
+		"title": {
+			"en": "French Baccalaureate — Major in Computer Science and Mathematics",
+			"fr": "Baccalauréat général — Spécialités Informatique et Mathématique"
+		},
+		"to": {
+			"en": "2021",
+			"fr": "2021"
+		}
+	},
+	{
+		"id": "081677e8-6444-40ab-b0e2-2243e0c1c8a0",
+		"createdAt": "2026-10-17T14:44:16.733Z",
+		"description": {
+			"en": "Program in Computer Science emphasizing the design and development of maintainable applications. Worked on web and mobile projects and designed application architectures. Validated applications through unit and integration testing. Gained hands-on experience throughout the software development lifecycle.",
+			"fr": "Formation technique axée sur la conception et le développement d'applications maintenables. Réalisation de projets web et mobiles, mise en place d'architectures logicielles, et validation des applications via des tests unitaires et d'intégration, avec une forte approche pratique du cycle de développement."
+		},
+		"from": {
+			"en": "2021",
+			"fr": "2021"
+		},
+		"logo": "/assets/certifications/IUT.jpg",
+		"order": 2,
+		"school": {
+			"en": "University Institute of Technology, Paris Cité (IUT Paris Cité)",
+			"fr": "IUT de Paris Cité"
+		},
+		"tags": [],
+		"title": {
+			"en": "Bachelor of Technology in Computer Science",
+			"fr": "BUT Informatique — Réalisation d'applications"
+		},
+		"to": {
+			"en": "2024",
+			"fr": "2024"
+		}
+	}
+]

@@ -1,0 +1,62 @@
+[
+	{
+		"id": "e08d6686-733f-4fad-b8c1-d4d88c508bf1",
+		"category": "backend",
+		"createdAt": "2026-10-17T14:44:16.733Z",
+		"description": {
+			"en": "End-to-end web development, from robust backend logic to interactive user interfaces.",
+			"fr": "Développement de solutions web complètes, de la logique backend aux interfaces utilisateur interactives."
+		},
+		"name": {
+			"en": "Full-Stack",
+			"fr": "Full-Stack"
+		},
+		"order": 1,
+		"tags": ["Node.JS", "Go", "SpringBoot", "React", "SAPUI5"]
+	},
+	{
+		"id": "3f681b29-c144-4d45-92d1-5d8d22352115",
+		"category": "devops",
+		"createdAt": "2026-10-17T14:44:16.733Z",
+		"description": {
+			"en": "Automating CI/CD pipelines and containerizing applications for reliable and continuous deployment.",
+			"fr": "Automatisation des pipelines CI/CD et conteneurisation pour un déploiement continu et fiable."
+		},
+		"name": {
+			"en": "DevOps",
+			"fr": "DevOps"
+		},
+		"order": 4,
+		"tags": ["Docker", "Github Actions"]
+	},
+	{
+		"id": "85112e7b-4514-474c-a4c0-0f3cd975bf39",
+		"category": "cloud",
+		"createdAt": "2026-10-17T14:44:16.733Z",
+		"description": {
+			"en": "Designing infrastructure and leveraging cloud services to deploy scalable applications.",
+			"fr": "Conception, provisionnement d'infrastructure et gestion des services cloud évolutifs."
+		},
+		"name": {
+			"en": "Cloud",
+			"fr": "Cloud"
+		},
+		"order": 2,
+		"tags": ["SAP BTP", "AWS CDK"]
+	},
+	{
+		"id": "4a263efc-5880-4f59-9758-960a45934924",
+		"category": "architecture",
+		"createdAt": "2026-10-17T14:44:16.733Z",
+		"description": {
+			"en": "Conception of the architecture, components and data flows to ensure maintenability, performance and scalability.",
+			"fr": "Conception de l'architecture, des composants et des flux pour assurer maintenabilité, performance et évolutivité des projets."
+		},
+		"name": {
+			"en": "Application architecture",
+			"fr": "Architecture applicative"
+		},
+		"order": 3,
+		"tags": ["UML Diagram", "Object oriented programming"]
+	}
+]

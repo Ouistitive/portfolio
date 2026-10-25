@@ -17,7 +17,7 @@ export function ProjectsSection() {
 				title: p.title[lang],
 				description: p.description[lang],
 				tags: p.tags,
-				preview: p.previewImage ?? undefined,
+				preview: p.previewImages ?? [],
 				viewGithub: p.githubLink ?? undefined,
 			})),
 		[apiProjects, lang],

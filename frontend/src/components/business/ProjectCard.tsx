@@ -10,7 +10,7 @@ export interface ProjectCardProps {
 	description: string;
 	tags: string[];
 	Icon?: IconType;
-	preview?: string;
+	preview: string[];
 
 	viewGithub?: string;
 }
@@ -31,7 +31,7 @@ export function ProjectCard({
 					<p className="font-bold text-2xl">{title}</p>
 				</div>
 				<hr className="my-2 text-border" />
-				{preview ? (
+				{preview.length !== 0 ? (
 					<div className="md-5 flex h-40 justify-center rounded-bg sm:h-56 md:h-64 lg:h-75">
 						<ImageFullscreen
 							src={preview}

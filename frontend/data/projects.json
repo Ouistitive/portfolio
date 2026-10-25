@@ -1,0 +1,58 @@
+[
+	{
+		"id": "d639f55a-70d0-4245-bdc0-1db7e1228b5e",
+		"createdAt": "2026-10-17T14:44:16.733Z",
+		"description": {
+			"en": "A Go-based simulation designed to model crowd dynamics during Black Friday, with the goal of identifying an optimal store layout that allows agents to navigate the entire store efficiently.\n\nThe system includes several types of agents: standard customers, selfish customers capable of stealing from other agents, and security guards responsible for reducing theft within their field of view.",
+			"fr": "Simulation en Go visant à modéliser les mouvements de foule lors du Black Friday afin d'identifier l'agencement de magasin optimal permettant aux agents de parcourir l'ensemble de l'espace.\n\nLe système repose sur plusieurs types d'agents : des clients classiques, des clients égoïstes pouvant voler d'autres agents, et des agents de sécurité chargés de réduire le taux de vol dans leur champ de vision."
+		},
+		"githubLink": "https://github.com/NoeGodin/BlackFriday-Simulator",
+		"order": 1,
+		"previewImages": ["/assets/projects/blackfriday.png"],
+		"tags": ["Multi-agents System", "Go / Ebiten", "Concurrency management"],
+		"title": {
+			"en": "Black Friday simulation",
+			"fr": "Simulation de Black Friday"
+		}
+	},
+	{
+		"id": "655086b9-3ec9-4fe6-836f-6dc248ffa690",
+		"createdAt": "2026-10-17T14:44:16.733Z",
+		"description": {
+			"en": "Bobby is a web application in Laravel and React to manage UTC student organizations' equipments. This application allows student organizations to display their inventory and create borrow requests from other associations. Integration of other services from UTC to ensure authentication and data synchronization.\n\nWe put a security layer in order to protect our web application from main security breaches (code injection, access control...).",
+			"fr": "Application web de gestion des objets des associations de l'UTC en Laravel et React. L'application permet aux associations de visualiser leur inventaire et faire des demandes d'emprunts d'objets à d'autres associations. Intégration avec d'autres services de l'UTC pour assurer l'authentification et la synchronisation des données.\n\nNous avons mis en place des sécurités dans le but de protéger notre application web, des principales failles de sécurité (injection de code, contrôles des accès et permissions...)."
+		},
+		"githubLink": null,
+		"order": 2,
+		"previewImages": [
+			"/assets/projects/bobby.png",
+			"/assets/projects/blackfriday.png"
+		],
+		"tags": [
+			"PHP / Laravel",
+			"React / Typescript",
+			"IT Security",
+			"Access control"
+		],
+		"title": {
+			"en": "Inventory management for UTC Student Organizations",
+			"fr": "Gestion des inventaires des associations"
+		}
+	},
+	{
+		"id": "2ac467db-2b4a-4906-8e58-cd510d1fe21e",
+		"createdAt": "2026-10-17T14:44:16.733Z",
+		"description": {
+			"en": "KanaMaster is a Java-based mobile quiz application designed to help users learn the main Japanese characters known as kana.",
+			"fr": "Application mobile de quiz en Java pour apprendre les principaux caractères japonais."
+		},
+		"githubLink": "https://github.com/Ouistitive/KanaMaster",
+		"order": 3,
+		"previewImages": [],
+		"tags": ["Java", "Android Studio"],
+		"title": {
+			"en": "KanaMaster: Mobile application quiz",
+			"fr": "KanaMaster"
+		}
+	}
+]

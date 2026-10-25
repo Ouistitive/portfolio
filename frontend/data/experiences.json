@@ -1,0 +1,132 @@
+[
+	{
+		"id": "bf062664-07ec-4d3b-a52b-f35c7d6455b3",
+		"company": {
+			"en": "SAP France",
+			"fr": "SAP France"
+		},
+		"createdAt": "2026-10-17T14:44:16.733Z",
+		"logo": "/assets/enterprises/SAP.png",
+		"order": 1,
+		"positions": [
+			{
+				"description": {
+					"en": "Work in progress...",
+					"fr": "En cours..."
+				},
+				"from": {
+					"en": "September 2026",
+					"fr": "Septembre 2026"
+				},
+				"id": "04378679-5d1e-4282-be1f-787e59149bdd",
+				"tags": ["Databricks", "Python", "Agentic AI"],
+				"title": {
+					"en": "AI Agentic Engineer Apprentice",
+					"fr": "Alternant ingénieur en IA agentique"
+				},
+				"to": {
+					"en": "Now",
+					"fr": "Maintenant"
+				}
+			},
+			{
+				"description": {
+					"en": "Full-stack feature development on a cloud platform on SAP BTP for automated provisioning of Azure/HANA datalakes and Databricks workspaces: redesigned the data model, automated certificate renewal, and implemented usage metrics, using Spring Boot/CAP CDS and Next.js/UI5, in an Agile SAFe environment.",
+					"fr": "Développement de fonctionnalités full-stack sur une plateforme cloud interne pour le provisionnement automatisé de datalakes Azure/HANA et workspaces Databricks : refonte du modèle de données, automatisation du renouvellement des certificats et mise en place de métriques d’usage, en Spring Boot/CAP CDS et Next.js/UI5, méthode Agile SAFe."
+				},
+				"from": {
+					"en": "September 2024",
+					"fr": "Septembre 2024"
+				},
+				"id": "04378679-5d1e-4282-be1f-787e59149bdd",
+				"tags": [
+					"SAP BTP",
+					"Full-Stack",
+					"SAP CAP (CDS)",
+					"SpringBoot",
+					"React",
+					"UI5"
+				],
+				"title": {
+					"en": "Cloud & Software Engineer Apprentice",
+					"fr": "Alternant ingénieur Cloud & Software"
+				},
+				"to": {
+					"en": "August 2026",
+					"fr": "Août 2026"
+				}
+			}
+		]
+	},
+	{
+		"id": "b27dee0d-5428-4cc4-85e6-be42b4bfbc1f",
+		"company": {
+			"en": "IZHO",
+			"fr": "IZHO"
+		},
+		"createdAt": "2026-10-17T14:44:16.733Z",
+		"logo": "/assets/enterprises/IZHO.jpg",
+		"order": 2,
+		"positions": [
+			{
+				"description": {
+					"en": "Development and optimization of Capcore, a web platform for energy consumption data management. Implemented multi-format data importers, built automated export pipelines, generated dynamic reporting features, and refactored backend components within an AWS-based microservices architecture.",
+					"fr": "Développement et optimisation de la plateforme web Capcore pour la gestion de données de consommation énergétique, avec implémentation d'importeurs multi-formats, création d'exporteurs automatisés, génération de rapports dynamiques et refonte de composants backend au sein d'une architecture micro-services sur AWS."
+				},
+				"from": {
+					"en": "April 2024",
+					"fr": "Avril 2024"
+				},
+				"id": "891b1da7-49de-4fed-90e8-e4e1cbaae33d",
+				"tags": [
+					"AWS",
+					"Serverless",
+					"Microservices",
+					"Node.js",
+					"TypeScript",
+					"Chart.js"
+				],
+				"title": {
+					"en": "Developer Cloud Full-Stack Intern",
+					"fr": "Stagiaire développeur Cloud Full-Stack"
+				},
+				"to": {
+					"en": "August 2024",
+					"fr": "Août 2024"
+				}
+			}
+		]
+	},
+	{
+		"id": "b6b76773-1de5-4f63-b644-1246bca1df0a",
+		"company": {
+			"en": "SIMPLOS",
+			"fr": "SIMPLOS"
+		},
+		"createdAt": "2026-10-17T14:44:16.733Z",
+		"logo": "/assets/enterprises/SIMPLOS.jpg",
+		"order": 3,
+		"positions": [
+			{
+				"description": {
+					"en": "Design and implementation of a WordPress plugin connecting e-commerce websites to the SIMPLOS platform to externalize customer authentication and data storage, with secure retrieval of required information for user registration and product purchases.",
+					"fr": "Conception d'un plugin WordPress connectant les sites e-commerce à la plateforme SIMPLOS pour externaliser l'authentification et le stockage des données clients, avec récupération sécurisée des informations nécessaires à l'inscription ou à l'achat de produit."
+				},
+				"from": {
+					"en": "April 2023",
+					"fr": "Avril 2023"
+				},
+				"id": "7e4e47bd-16a9-4f7a-b991-fa62f427aef8",
+				"tags": ["Cybersecurity", "Mobile", "Flutter", "WordPress", "PHP"],
+				"title": {
+					"en": "Developer Web & Mobile Intern",
+					"fr": "Stagiaire développeur web et mobile"
+				},
+				"to": {
+					"en": "June 2023",
+					"fr": "Juin 2023"
+				}
+			}
+		]
+	}
+]
