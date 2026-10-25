@@ -19,6 +19,7 @@ export function HobbiesSection() {
 				title: h.title[lang],
 				description: h.description[lang],
 				tags: h.tags,
+				preview: [],
 			})),
 		[apiHobbies, lang],
 	);
